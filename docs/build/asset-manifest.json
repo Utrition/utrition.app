@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.812793d8.css",
+    "main.js": "/static/js/main.be59c219.js",
+    "static/js/787.dc1a68f1.chunk.js": "/static/js/787.dc1a68f1.chunk.js",
+    "static/media/emoji-background.png": "/static/media/emoji-background.a0e785a1939f033d261f.png",
+    "index.html": "/index.html",
+    "main.812793d8.css.map": "/static/css/main.812793d8.css.map",
+    "main.be59c219.js.map": "/static/js/main.be59c219.js.map",
+    "787.dc1a68f1.chunk.js.map": "/static/js/787.dc1a68f1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.812793d8.css",
+    "static/js/main.be59c219.js"
+  ]
+}
