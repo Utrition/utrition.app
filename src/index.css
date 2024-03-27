@@ -1,38 +1,39 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-image: url('../public/emoji-background.png');
-  background-size: 100%;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../public/emoji-background.png");
+    background-size: cover;
 }
 
 body {
-  background-color: #f0f4f8; /* Light grey-blue background for a soft feel */
-  font-family: 'Arial', sans-serif; /* Web-friendly, clean font */
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full-screen height */
+    background-color: #f0f4f8; /* Light grey-blue background for a soft feel */
+    font-family: "Arial", sans-serif; /* Web-friendly, clean font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-screen height */
 }
 
 .container {
-  text-align: center;
-  padding: 50px;
-  background-color: white; /* Clean, white background for the content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  border-radius: 10px; /* Slightly rounded corners for an organic feel */
+    text-align: center;
+    padding: 50px;
+    background-color: white; /* Clean, white background for the content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Slightly rounded corners for an organic feel */
 }
 
 h1 {
-  color: #333; /* Dark grey for contrast */
-  margin-bottom: 20px; /* Spacing below the title */
+    color: #333; /* Dark grey for contrast */
+    margin-bottom: 20px; /* Spacing below the title */
 }
 
 p {
-  color: #666; /* Lighter grey for the informational text */
-  font-size: 16px; /* Readable font size */
+    color: #666; /* Lighter grey for the informational text */
+    font-size: 16px; /* Readable font size */
 }
