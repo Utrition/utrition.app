@@ -1,16 +1,24 @@
+// Libraries
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+
+// Components
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+
+
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <div className="container">
-      <h1>UTrition</h1>
-      <p>We're preparing something amazing for your nutrition journey. Stay tuned!</p>
+  <BrowserRouter>
+    <div className="root">
+      <Header/>
+      <Footer/>
     </div>
-  </React.StrictMode>
+  </BrowserRouter>
 );
 
 reportWebVitals();
