@@ -58,7 +58,7 @@ function HeroHome() {
           {/* Hero image */}
           <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
               <div className="flex flex-col justify-center">
-                <img className="mx-auto" src={"images/image.png"} width="200" height="200" alt="Hero" />
+                <img className="mx-auto" src={"./src/images/hero-image.png"} width="200" height="200" alt="Hero" />
               </div>
             </div>
           {/* Hero Video */}
