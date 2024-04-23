@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function HeroHome() {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
-  const video = useRef(null);
+  // const [videoModalOpen, setVideoModalOpen] = useState(false);
+  // const video = useRef(null);
   // Eventually add back if video is needed.
   // useEffect(() => {
   //   videoModalOpen ? video.current.play() : video.current.pause();
