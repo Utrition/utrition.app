@@ -13,7 +13,7 @@ const Team = () => {
           <p>Founder & CEO</p>
         </div>
         <div className="team-member">
-          <img src="path_to_image" alt="Ryan Wittemer" />
+          <img src="path_to_image" alt="Ryan Wittmers" />
           <h3>Ryan Wittmers</h3>
           <p>Founder & COO</p>
         </div>

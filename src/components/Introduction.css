@@ -14,6 +14,12 @@
     margin: 10px 0;
     line-height: 1.5;
   }
+
+  .impact-stats {
+    font-weight: bold;
+    font-family: 'Lilita One', sans-serif;
+    color: green;
+  }
   
   /* Responsive design */
   @media (max-width: 768px) {
