@@ -17,6 +17,11 @@ const Team = () => {
           <h3>Ryan Wittmers</h3>
           <p>Founder & COO</p>
         </div>
+        <div className="team-member">
+          <img src="path_to_image" alt="" />
+          <h3>Team Member</h3>
+          <p>Other team member cards go here...</p>
+        </div>
         {/* Add other team members here */}
       </div>
     </section>
