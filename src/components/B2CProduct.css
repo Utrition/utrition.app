@@ -1,0 +1,39 @@
+.b2c-product {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+  }
+  
+  .b2c-product h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .b2c-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .b2c-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .b2c-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .b2c-product h2 {
+      font-size: 1.5em;
+    }
+  
+    .b2c-item {
+      padding: 15px;
+    }
+  }
+  
