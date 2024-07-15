@@ -35,12 +35,18 @@
 .hero-form {
   display: flex;
   align-items: center;
+  max-width: 500px; /* Set a max-width for the form */
+  width: 100%;
+}
+
+.hero-form .hero-input {
+  flex: 1;
+  position: relative;
 }
 
 .hero-form .hero-input .MuiOutlinedInput-root {
   border-radius: 50px;
   background-color: #fff;
-  padding-right: 0; /* Remove padding on the right to align button */
   width: 100%;
 }
 
@@ -48,33 +54,20 @@
   border-color: #14694a; /* Green border */
 }
 
-.hero-form .hero-input input {
-  padding: 15px 25px; /* Adjust padding */
-  padding-right: 150px
-}
-
 .hero-input .hero-button {
   background-color: #14694a; /* Green color */
   color: #fff;
   font-size: 1em;
-  border-radius: 25px; /* Rounded corners */
-  margin-left: -15px; /* Overlap the button on the input */
-  margin-right: 5px; /* Ensure theres a gap between the button and end of input box. */
+  border-radius: 50px; /* Rounded corners on right */
   box-shadow: none; /* Remove button shadow */
-  padding: 8px 15px;
   white-space: nowrap;
+  margin-right: -4px;
 }
 
 .hero-input .hero-button:hover {
   background-color: #049862; /* Green color */
   color: #fff;
-  font-size: 1em;
-  border-radius: 25px; /* Rounded corners */
-  margin-left: -15px; /* Overlap the button on the input */
-  margin-right: 5px;
   box-shadow: none; /* Remove button shadow */
-  padding: 2px 15px;
-  white-space: nowrap;
 }
 
 @media (max-width: 768px) {

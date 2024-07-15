@@ -1,13 +1,28 @@
 import React from 'react';
 import { Container, Typography, TextField, Button, Box, InputAdornment } from '@mui/material';
+import { styled } from '@mui/system';
 import './Hero.css';
+
+const CustomTextField = styled(TextField)({
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: '#14694a', // Default border color
+    },
+    '&:hover fieldset': {
+      borderColor: '#049862', // Border color on hover
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: '#14694a', // Border color when focused
+    },
+  },
+});
 
 const Hero = () => {
   return (
     <div className="hero-container">
       <Container className="hero-content">
         <Box className="hero-text">
-          <Typography className="hero-title">
+          <Typography variant="h1" className="hero-title">
             Catalyze Health
           </Typography>
           <Typography variant="body1" className="hero-description">
@@ -15,7 +30,7 @@ const Hero = () => {
           </Typography>
         </Box>
         <Box component="form" className="hero-form">
-          <TextField
+          <CustomTextField
             variant="outlined"
             placeholder="Enter your email"
             className="hero-input"
