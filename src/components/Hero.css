@@ -1,0 +1,120 @@
+.hero-container {
+  background: url('../assets/hero-notext.png') no-repeat center center;
+  background-size: cover;
+  padding: 60px;
+  display: flex;
+  height: auto;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+  padding: 50px;
+}
+
+.hero-text {
+  margin-bottom: 20px;
+  max-width: 650px;
+}
+
+.hero-text .hero-title {
+  font-size: 5em;
+  color: #14694a; /* HEX Code for title */
+  font-family: 'Argent CF Extra Bold', serif; /* Example font */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.2em;
+  color: #000;
+  font-family: 'Helvetica Neue', sans-serif; /* Example font */
+  margin-bottom: 20px;
+}
+
+.hero-form {
+  display: flex;
+  align-items: center;
+}
+
+.hero-form .hero-input .MuiOutlinedInput-root {
+  border-radius: 50px;
+  background-color: #fff;
+  padding-right: 0; /* Remove padding on the right to align button */
+  width: 100%;
+}
+
+.hero-form .hero-input .MuiOutlinedInput-notchedOutline {
+  border-color: #14694a; /* Green border */
+}
+
+.hero-form .hero-input input {
+  padding: 15px 25px; /* Adjust padding */
+  padding-right: 150px
+}
+
+.hero-input .hero-button {
+  background-color: #14694a; /* Green color */
+  color: #fff;
+  font-size: 1em;
+  border-radius: 25px; /* Rounded corners */
+  margin-left: -15px; /* Overlap the button on the input */
+  margin-right: 5px; /* Ensure theres a gap between the button and end of input box. */
+  box-shadow: none; /* Remove button shadow */
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+
+.hero-input .hero-button:hover {
+  background-color: #049862; /* Green color */
+  color: #fff;
+  font-size: 1em;
+  border-radius: 25px; /* Rounded corners */
+  margin-left: -15px; /* Overlap the button on the input */
+  margin-right: 5px;
+  box-shadow: none; /* Remove button shadow */
+  padding: 2px 15px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-text {
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-size: 2em;
+  }
+
+  .hero-description {
+    font-size: 1em;
+  }
+
+  .hero-form {
+    flex-direction: column;
+  }
+
+  .hero-input {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .hero-button {
+    width: 100%;
+    border-radius: 25px;
+    margin-left: 0;
+  }
+}

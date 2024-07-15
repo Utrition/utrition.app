@@ -1,0 +1,26 @@
+.commitment-container {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .commitment-title {
+    font-size: 1.5em;
+    color: #000;
+    font-family: 'Helvetica Neue', sans-serif; 
+    margin-bottom: 20px;
+  }
+  
+  .commitment-heading {
+    font-size: 3em;
+    color: #14694a; /* HEX Code for heading */
+    font-family: 'Argent CF Extra Bold', sans-serif;
+    margin-bottom: 40px;
+  }
+  
+  .commitment-description {
+    font-size: 1.2em;
+    color: #000;
+    font-family: 'Helvetica Neue', sans-serif; 
+  }
+  
