@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, TextField, Button, Box, InputAdornment } from '@mui/material';
-import { styled } from '@mui/system';
+import { border, styled } from '@mui/system';
 import './Hero.css';
 
 const CustomTextField = styled(TextField)({
@@ -13,6 +13,7 @@ const CustomTextField = styled(TextField)({
     },
     '&.Mui-focused fieldset': {
       borderColor: '#14694a', // Border color when focused
+      borderWidth: '3px'
     },
   },
 });
@@ -22,10 +23,10 @@ const Hero = () => {
     <div className="hero-container">
       <Container className="hero-content">
         <Box className="hero-text">
-          <Typography variant="h1" className="hero-title">
+          <Typography className="hero-title">
             Catalyze Health
           </Typography>
-          <Typography variant="body1" className="hero-description">
+          <Typography className="hero-description">
             As a company committed to catalyzing health and wellness, we strive to provide innovative solutions that enhance the well-being of our community. By entering your email, you will stay informed and connected with our journey to promote a healthier world.
           </Typography>
         </Box>
@@ -51,3 +52,4 @@ const Hero = () => {
 };
 
 export default Hero;
+  

@@ -1,3 +1,6 @@
+/* Import App file to get global variables. */
+@import '../App.css';
+
 .hero-container {
   background: url('../assets/hero-notext.png') no-repeat center center;
   background-size: cover;
@@ -7,7 +10,7 @@
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 650px;
   text-align: left;
   padding: 50px;
 }
@@ -20,15 +23,16 @@
 .hero-text .hero-title {
   font-size: 5em;
   color: #14694a; /* HEX Code for title */
-  font-family: 'Argent CF Extra Bold', serif; /* Example font */
-  font-weight: bold;
+  font-family: var(--header-font); 
+  font-weight: var(--header-weight);
   margin-bottom: 20px;
 }
 
-.hero-description {
-  font-size: 1.2em;
+.hero-text .hero-description {
+  font-size: 1.1em;
   color: #000;
-  font-family: 'Helvetica Neue', sans-serif; /* Example font */
+  font-family: var(--body-font);
+  font-weight: var(--body-weight);
   margin-bottom: 20px;
 }
 
@@ -48,6 +52,13 @@
   border-radius: 50px;
   background-color: #fff;
   width: 100%;
+  font-family: var(--body-font);
+}
+
+/* Change input font */
+.hero-form .hero-input .MuiOutlinedInput-input {
+  font-family: var(--body-font);
+  font-weight: 700;
 }
 
 .hero-form .hero-input .MuiOutlinedInput-notchedOutline {
@@ -55,13 +66,15 @@
 }
 
 .hero-input .hero-button {
-  background-color: #14694a; /* Green color */
+  background-color: var(--primary-color); /* Green color */
   color: #fff;
   font-size: 1em;
   border-radius: 50px; /* Rounded corners on right */
   box-shadow: none; /* Remove button shadow */
   white-space: nowrap;
   margin-right: -4px;
+  font-family: var(--body-font);
+  font-weight: 800;
 }
 
 .hero-input .hero-button:hover {

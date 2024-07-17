@@ -11,14 +11,24 @@ const Commitment = () => {
   return (
     <div className="commitment-container">
       <Container>
-        <Typography variant="h4" className="commitment-title">
+        <Typography className="commitment-title">
           BREAKING BARRIERS TO HEALTHY EATING
         </Typography>
-        <Typography variant="h2" className="commitment-heading">
+        <Typography className="commitment-heading">
           Our Commitment to Accessibility, Affordability, and Education
         </Typography>
-        <Typography variant="body1" className="commitment-description">
-          20% of Americans attribute an improper diet to a lack of knowledge. 23% say it takes too much time, and 46% believe it is too expensive. These insights, as reported by the World Economic Forum (WEF), are pivotal in shaping our strategic direction as we prepare to introduce our B2C product. By addressing knowledge gaps, time constraints, and cost concerns, we aim to empower individuals with accessible and affordable healthier choices, ensuring our product fosters a healthier lifestyle.
+        <Typography className="commitment-description">
+          <span className="emphasize-stat">20%</span> ...of Americans attribute an improper diet to a lack of knowledge. 
+          <br></br><span className="emphasize-stat">23%</span> ...say it 
+          takes too much time 
+          <br></br><span className="emphasize-stat">46%</span> ...believe it is too expensive. 
+          
+          <br></br>
+          <br></br>
+          
+          These insights, as reported by the World Economic Forum (WEF), are pivotal in shaping our strategic 
+          direction as we prepare to introduce our B2C product. By addressing knowledge gaps, time constraints, and cost concerns, 
+          we aim to empower individuals with accessible and affordable healthier choices, ensuring our product fosters a healthier lifestyle.
         </Typography>
       </Container>
     </div>
