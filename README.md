@@ -1,5 +1,10 @@
 # UTrition Website v2.0
 
+## 07.16.2024 Changes
+I added finishing touches on the Commitment section to reflect the new design. However, I did take some creative liberty to emphasize the statistics provided so that they're more digestible. I made *very* basic changes to the site, but will want Sydney's review and improvements.
+
+![Commitment Section](./repo-assets/commitment-v2.png)
+
 ## 07.15.2024 Changes
 I've updated the website format and content to reflect Sydney's new design. So far, I've had the chance to update the hero section to reflect the new design, but do not have access to the fonts chosen so far. I will update this section once I have the fonts.
 
