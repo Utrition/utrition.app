@@ -32,7 +32,7 @@ const Vision = () => (
           </div>
           <div className="features-image-wrapper">
             <div className="phone-background">
-              <img src="%PUBLIC_URL%/assets/src/pages/vision/phone-image.png" alt="App Screenshot" className="phone-image" />
+              <img src="../../../assets/src/pages/vision/phone-image.png" alt="App Screenshot" className="phone-image" />
             </div>
           </div>
         </div>
