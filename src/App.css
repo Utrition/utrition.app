@@ -1,0 +1,36 @@
+/* Argent CF Font & Articulat - Adobe */
+@import url("https://use.typekit.net/sku5upd.css");
+
+:root {
+    /* Colors */
+    --primary-color: #14634a;
+    --text-color: #000000;
+    --background-color: #f7f7e0;
+    --white-color: #ffffff;
+    --gray-color: #666666;
+
+    /* Fonts */
+    --header-font: 'argent-cf', serif;
+    --header-weight: 700;
+    --body-font: 'articulat-cf', sans-serif;
+    --body-weight: 500;
+
+    --section-title-font-size: 1.5em;
+    --section-title-weight: 700;
+    --section-header-weight: 200;
+
+    --section-hero-font-family: var;
+    --section-hero-font-size: 3em;
+    --section-hero-font-weight: 200;
+}
+
+/* Remove all default styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #ffffff;
+}

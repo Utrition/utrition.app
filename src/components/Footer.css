@@ -1,0 +1,36 @@
+.footer-container {
+    background-color: #14694a; /* Background color */
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer-title {
+    font-size: 2.5em;
+    font-family: 'Argent CF Extra Bold', sans-serif; 
+    margin-bottom: 20px;
+  }
+  
+  .footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-input {
+    margin-right: 10px;
+    width: 300px;
+  }
+  
+  .footer-button {
+    background-color: #fff;
+    color: #14694a;
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  
+  .footer-copyright {
+    font-size: 1em;
+  }
+  
