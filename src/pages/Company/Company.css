@@ -32,7 +32,8 @@
 
 .team-card-image {
   border-radius: 15px 15px 0 0; /* Rounded corners at the top */
-  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+  object-fit: contain; /* Ensures the image covers the entire area without stretching */
+  align-items: flex-start;
 }
 
 .team-card-name {

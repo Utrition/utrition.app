@@ -1,52 +1,68 @@
 // Company.js
 import './Company.css';
 import React from 'react';
-import { Grid, Card, CardContent, CardMedia, CardHeader, Typography } from '@mui/material';
+import { Grid, Card, CardContent, CardMedia, Typography } from '@mui/material';
+const imagePath = '/assets/src/pages/company';
+
 
 // Example team data
 const teamMembers = [
   {
     name: 'Connor Thompson',
-    position: 'CEO & Co-Founder',
-    image: 'path/to/image1.jpg',
+    position: 'Co-Founder & CEO',
+    image: `${imagePath}/connor.png`,
   },
   {
     name: 'Ryan Wittmers',
-    position: 'COO & Co-Founder',
-    image: 'path/to/image2.jpg',
+    position: 'Co-Founder & COO',
+    image: `${imagePath}/ryan.JPG`,
   },
   {
-    name: 'Connor Thompson',
-    position: 'CEO & Co-Founder',
-    image: 'path/to/image1.jpg',
+    name: 'Seamus Thompson',
+    position: 'Co-Founder & CMO',
+    image: `${imagePath}/seamus.png`,
   },
   {
-    name: 'Ryan Wittmers',
-    position: 'COO & Co-Founder',
-    image: 'path/to/image2.jpg',
+    name: 'Jacob Hinkston',
+    position: 'Co-Founder & CTO',
+    image: `${imagePath}/jacob.JPG`,
   },
   {
-    name: 'Connor Thompson',
-    position: 'CEO & Co-Founder',
-    image: 'path/to/image1.jpg',
+    name: 'David Allen',
+    position: 'Head of Mobile Development',
+    image: `${imagePath}/david.png`,
   },
   {
-    name: 'Ryan Wittmers',
-    position: 'COO & Co-Founder',
-    image: 'path/to/image2.jpg',
+    name: 'Dr. Walker Orr',
+    position: 'Head of AI Development',
+    image: `${imagePath}/walker.png`,
   },
   {
-    name: 'Connor Thompson',
-    position: 'CEO & Co-Founder',
-    image: 'path/to/image1.jpg',
+    name: 'Sydney Jean-Simon',
+    position: 'Head of Branding & Design',
+    image: `${imagePath}/sydney.JPG`,
   },
   {
-    name: 'Ryan Wittmers',
-    position: 'COO & Co-Founder',
-    image: 'path/to/image2.jpg',
+    name: 'Grant Lee',
+    position: 'Head of Data Integration Development',
+    image: `${imagePath}/grant.jpg`,
   },
-  
-  // Add more team members
+  {
+    name: 'Logan Barger',
+    position: 'Senior Machine Learning Engineer',
+    image: `${imagePath}/logan.png`,
+  },
+  {
+    name: 'Chase Turner',
+    position: 'Advisory Board - Design',
+    image: `${imagePath}/chase.png`,
+  },
+  {
+    name: 'Tim Thompson',
+    position: 'Advisory Board - Finance',
+    image: `${imagePath}/tim.png`,
+  }
+  // Add more team members here
 ];
 
 const Company = () => {
