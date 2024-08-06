@@ -1,3 +1,6 @@
+/* Import Inter font. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* Define custom properties for colors */
 :root {
   --primary-color: #14694A;
@@ -5,23 +8,18 @@
   --background-color: #202c45;
   --white-color: #FFFFFF;
   --gray-color: #666666;
+  --primary-font: 'Inter', sans-serif;
 }
-
-/* Import fonts (example using Google Fonts) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* General styles */
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: var(--primary-font);
   color: var(--text-color);
   background-color: var(--background-color);
-
-  font: "inter";
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Argent CF Extra Bold', sans-serif;
-  color: var(--primary-color);
+  font-family: var(--primary-font);
 }
 
 .button {
