@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Hero from './components/Hero';
-import Commitment from './components/Commitment';
-import Mission from './components/Mission';
-import Application from './components/Application';
-import Resources from './components/Resources';
-import Team from './components/Team';
-import Footer from './components/Footer';
-import './App.css';
+import Hero from './components/Home/Hero';
+import Commitment from './components/Home/Commitment';
+import Mission from './components/AboutUs/Mission';
+import Application from './components/old/Application';
+import Resources from './components/Vision/Resources';
+import Team from './components/AboutUs/Team';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
 import './index.css';

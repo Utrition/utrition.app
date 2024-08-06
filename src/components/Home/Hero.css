@@ -1,8 +1,8 @@
 /* Import App file to get global variables. */
-@import '../App.css';
+@import '../../App.css';
 
 .hero-container {
-  background: url('../assets/hero-notext.png') no-repeat center center;
+  /* background: url('../../assets/hero-notext.png') no-repeat center center; */
   background-size: cover;
   padding: 60px;
   display: flex;
