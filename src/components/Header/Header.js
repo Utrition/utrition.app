@@ -12,8 +12,8 @@ export default function Header() {
         
         <nav>
             {/* ROUTE HERE */}
-            <h3>Home</h3>
-            <h3>Vision</h3>
+            <a href="/"><h3>Home</h3></a>
+            <a href="/vision"><h3>Vision</h3></a>
             <h3>About</h3>
         </nav>
 
