@@ -7,25 +7,36 @@
 }
 
 .header-main-text {
-    font-weight: 400;
-    font-style: normal;
-    /* font-family: "YADt1Xf3MOg 0", _fb_, auto; */
-    color: rgb(77, 236, 109);
-    font-kerning: none;
+    /* font-weight: 400;
+    font-style: normal; */
+
+    /* font-kerning: none;
     text-decoration: none;
     width: 15.6983px;
     height: 5.59287px;
-    transform: translate(8.7816px, 5.69589px);
-    font-size: 76.5621px; 
-    color: rgb(77, 236, 109); 
-    line-height: 79px; 
-    letter-spacing: -0.042em; 
+    font-size: 76.5621px;  */
+    
+    /* line-height: 79px;  */
+    /* letter-spacing: -0.042em; 
     text-transform: uppercase;
-    list-style-type: none;
+    list-style-type: none; */
 }
 .header nav {
+
+    background-color: rgba(165, 112, 255, .4);
+    border-radius: 5px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    
+}
+
+.header nav h3 {
+
+}
+
+.navigation-bar {
+
 }
 
 

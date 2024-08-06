@@ -4,9 +4,10 @@ import './Header.css'
 export default function Header() {
   return (
     <header className="header">
-        <span className="header-main-text">
-            utrition
-        </span>
+
+        <h1 className="header-main-text font-color-primary">
+            Utrition
+        </h1>
 
         
         <nav>

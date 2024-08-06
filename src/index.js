@@ -30,13 +30,13 @@ ReactDOM.render(
       
 
       <Header/>
-      <Hero />
+      {/* <Hero />
       <Commitment />
       <Mission />
       <Application />
       <Resources />
       <Team />
-      <Footer />
+      <Footer /> */}
     </div>
   </React.StrictMode>,
   document.getElementById('root')
