@@ -10,7 +10,25 @@ import Team from './components/AboutUs/Team';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
 import './index.css';
+import Home from './components/Home/Home';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>
+  }
+  // , {
+  //   path: "/vision",
+  //   element: <Vision/>
+  // }
+]);
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -29,6 +47,10 @@ ReactDOM.render(
       
 
       <Header/>
+      <RouterProvider router={router}/>
+      
+      {/* <Home/> */}
+
       {/* <Hero />
       <Commitment />
       <Mission />
