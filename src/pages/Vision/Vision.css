@@ -47,7 +47,7 @@
   content: "";
   position: absolute;
   left: -200px;
-  top: -100px;
+  top: -50px;
   width: 750px;
   height: 750px;
   background: radial-gradient(rgba(77,236,109) 0%, rgba(136,224,195, 0.4) 0%, transparent 65%);
@@ -62,15 +62,22 @@
   padding-left: 40px; /* Adjust for spacing between title and description */
 }
 
-.vision-description {
-  display: flex;
-  align-items: center;
+.vision-description,
+.goal-description {
+  display: inline;
+  align-items: left;
   font-size: 1.8em; /* Slightly smaller for visual hierarchy */
   line-height: 1.7;
   color: #b0b9c8;
   font-weight: 100;
   /* Vertically align the text in the container */
   margin-top: 20px;
+}
+
+.vision-description .strong-text {
+  display: inherit;
+  font-weight: 600; /* Stronger emphasis for these words */
+  color: #ffffff; /* Keep the color consistent with the theme */
 }
 
 /* AppFeatures Section */
@@ -124,9 +131,8 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   background-color: #92d0b4; /* Green box background */
-  padding: 20px; /* Adjust padding for tighter layout */
   overflow: hidden;
   border-radius: 50px;
 }
@@ -140,10 +146,7 @@
 }
 
 .phone-image {
-  max-width: 100%;
-  height: auto;
-  transform: translateY(120px); /* Adjust translation to reduce gap */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 600px; /* Adjust translation to reduce gap */
 }
 
 /* Goal Section */
@@ -211,10 +214,16 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   
+  .vision-title::before {
+    top: -100px;
+    left: -250px;
+    width: 400px;
+    height: 400px;
+  }
+
   .vision-content, .goal-content {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   .vision-text-left,
@@ -228,17 +237,22 @@
 
   .vision-subtitle, .goal-subtitle {
     font-size: 1.5em;
+    text-align: center;
   }
 
   .vision-title, .goal-title {
     font-size: 2.5em;
     padding: 0.3em 0.25em;
+    text-align: center;
   }
 
   .vision-description, .goal-description {
     font-size: 1.2em;
-    padding: 0 0.25em;
     font-weight: 200;
+    text-align: center;
+  }
+  .vision-description .strong-text {
+    font-weight: 600;
   }
 
   /* AppFeatures Section */
@@ -257,7 +271,6 @@
   .features-image-wrapper {
     background-color: #92d0b4; /* Maintain green box background */
     border-radius: 50px; /* Rounded corners for the wrapper */
-    padding: 20px; /* Adjust padding for smaller screens */
     max-height: 400px; /* Adjust height for smaller screens */
   }
 
@@ -271,6 +284,7 @@
   }
 
   .phone-image {
-    transform: translateY(150px); /* Further adjust for mobile */
+    transform: translateY(25px); /* Further adjust for mobile */
+    height: 425px;
   }
 }

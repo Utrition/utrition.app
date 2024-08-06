@@ -12,11 +12,11 @@ const Vision = () => (
         </div>
         <div className="vision-text-right">
           <p className="vision-description">
-          Set: Your very own dietary preferences. 
-
-          Scan: Any food item and receive all pertinent nutrition information. 
-
-          Swipe: To the right to approve an item and check off your grocery list, up for a one time exception, and left to reject the item.
+            <span className="strong-text">Set:</span> Your very own dietary preferences. 
+          <br></br>
+            <span className="strong-text">Scan:</span> Any food item and receive all pertinent nutrition information. 
+          <br></br>
+            <span className="strong-text">Swipe:</span> To the right to approve an item and check off your grocery list, up for a one time exception, and left to reject the item.
           </p>
         </div>
       </div>
