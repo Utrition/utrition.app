@@ -6,6 +6,30 @@
 
 }
 
+.header-main-text {
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "YADt1Xf3MOg 0", _fb_, auto; */
+    color: rgb(77, 236, 109);
+    font-kerning: none;
+    text-decoration: none;
+    width: 15.6983px;
+    height: 5.59287px;
+    transform: translate(8.7816px, 5.69589px);
+    font-size: 76.5621px; 
+    color: rgb(77, 236, 109); 
+    line-height: 79px; 
+    letter-spacing: -0.042em; 
+    text-transform: uppercase;
+    list-style-type: none;
+}
+.header nav {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 
 
 @media (max-width: 768px) {

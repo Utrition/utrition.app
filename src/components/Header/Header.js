@@ -4,12 +4,16 @@ import './Header.css'
 export default function Header() {
   return (
     <header className="header">
-        <h1>URITION</h1>
+        <span className="header-main-text">
+            utrition
+        </span>
+
+        
         <nav>
             {/* ROUTE HERE */}
-            <h2>Home</h2>
-            <h2>Vision</h2>
-            <h2>About</h2>
+            <h3>Home</h3>
+            <h3>Vision</h3>
+            <h3>About</h3>
         </nav>
 
 
