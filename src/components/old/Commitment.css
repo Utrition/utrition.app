@@ -1,0 +1,39 @@
+@import '../../App.css';
+
+.commitment-container {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.commitment-container .commitment-title {
+  font-size: var(--section-title-font-size);
+  font-family: var(--body-font); 
+  font-weight: var(--section-title-weight);
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.commitment-container .commitment-heading {
+  margin: auto;
+  font-size: 3em;
+  color: #14694a; /* HEX Code for heading */
+  font-family: var(--header-font);
+  font-weight: var(--section-hero-font-weight);
+  margin-bottom: 40px;
+  max-width: 700px;
+}
+
+.commitment-container .commitment-description {
+  font-size: 1.2em;
+  color: #000;
+  font-family: var(--body-font); 
+}
+.commitment-container .commitment-description span {
+  font-family: var(--header-font);
+  font-weight: 200;
+  color: var(--primary-color);
+  font-size: 4em;
+  display: block;
+}
+  
