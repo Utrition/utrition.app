@@ -7,6 +7,7 @@ import Resources from './components/Resources';
 import Team from './components/Team';
 import Footer from './components/Footer';
 import './App.css';
+import Header from './components/Header/Header';
 
 /**
  * Renders the main application component.
@@ -16,6 +17,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+
+      <Header/>
       <Hero />
       <Commitment />
       <Mission />
