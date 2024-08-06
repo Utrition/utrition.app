@@ -48,10 +48,81 @@
   line-height: 1.6;
   color: #b0b9c8;
   font-weight: 100;
-
 }
 
-/* Responsive Design */
+/* AppFeatures Section */
+.app-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Remove top and bottom padding to reduce gap */
+  background-color: #202c45; /* Same as Vision section background */
+  color: #ffffff;
+  position: relative;
+}
+
+.app-features-content {
+  display: flex;
+  max-width: 1200px;
+  height: 650px;
+  width: 100%;
+  align-items: stretch; /* Stretch items to fill the container */
+  justify-content: space-between;
+  background-color: #303c53; /* Grey box background */
+  border-radius: 50px; /* Rounded corners for the grey box */
+  overflow: hidden; /* Ensures content stays within rounded corners */
+  margin: 0; /* Remove any default margin that might cause gaps */
+}
+
+.features-text {
+  flex: 1;
+  padding: 20px 40px; /* Adjust padding for better fit */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the text vertically */
+}
+
+.features-title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px; /* Reduce margin to bring closer to description */
+}
+
+.features-description {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 0; /* Remove any bottom margin */
+}
+
+.features-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #92d0b4; /* Green box background */
+  padding: 20px; /* Adjust padding for tighter layout */
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.phone-background {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+.phone-image {
+  max-width: 100%;
+  height: auto;
+  transform: translateY(120px); /* Adjust translation to reduce gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
 @media (max-width: 768px) {
   .vision-content {
     flex-direction: column;
@@ -59,7 +130,8 @@
     text-align: center;
   }
 
-  .vision-text-left, .vision-text-right {
+  .vision-text-left,
+  .vision-text-right {
     max-width: 100%;
     padding: 0;
   }
@@ -76,5 +148,38 @@
   .vision-description {
     font-size: 1.4em;
     padding: 0 0.25em;
+  }
+
+  /* AppFeatures Section */
+  .app-features-content {
+    flex-direction: column; /* Stack items vertically */
+    border-radius: 50px; /* Full border-radius when stacked */
+    align-items: center; /* Center items in column layout */
+    height: auto;
+  }
+
+  .features-text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .features-image-wrapper {
+    background-color: #92d0b4; /* Maintain green box background */
+    border-radius: 50px; /* Rounded corners for the wrapper */
+    padding: 20px; /* Adjust padding for smaller screens */
+    max-height: 400px; /* Adjust height for smaller screens */
+  }
+
+  .features-title {
+    font-size: 1.8em;
+  }
+
+  .features-description {
+    font-size: 1em;
+    margin: 15px 0;
+  }
+
+  .phone-image {
+    transform: translateY(150px); /* Further adjust for mobile */
   }
 }
