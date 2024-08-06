@@ -6,7 +6,7 @@ import Commitment from './components/Home/Commitment';
 import Mission from './components/AboutUs/Mission';
 import Application from './components/old/Application';
 import Vision from './components/Vision/Vision';
-import Team from './components/AboutUs/Team';
+import Company from './components/Company/Company';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
   ,{
     path: "/vision",
     element: <Vision/>
+  },
+  {
+    path: "/company",
+    element: <Company />
   }
 ]);
 

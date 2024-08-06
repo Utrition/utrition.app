@@ -1,0 +1,57 @@
+/* Company.css */
+.company-section {
+  padding: 60px 20px;
+  background-color: #202c45;
+  color: #ffffff;
+  text-align: center;
+}
+
+.company-title {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.company-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background-color: #2e3b55;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* Ensures that the card contents stay within rounded borders */
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(72, 172, 127, 0.3);
+}
+
+.team-card-image {
+  border-radius: 15px 15px 0 0; /* Rounded corners at the top */
+  object-fit: cover; /* Ensures the image covers the entire area without stretching */
+}
+
+.team-card-name {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.team-card-position {
+  font-size: 1em;
+  color: #b0b9c8;
+}
+
+@media (max-width: 768px) {
+  .company-title {
+    font-size: 2em;
+  }
+
+  .team-card {
+    margin-bottom: 20px;
+  }
+}

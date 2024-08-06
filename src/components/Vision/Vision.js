@@ -1,4 +1,3 @@
-import React from 'react';
 import './Vision.css';
 const phoneImage = require('../../assets/phone-image.png');
 
@@ -14,7 +13,11 @@ const Vision = () => (
         </div>
         <div className="vision-text-right">
           <p className="vision-description">
-            We strive to make grocery shopping safer and easier, ensuring our users can confidently choose foods that supports their health and well-being.
+          Set: Your very own dietary preferences. 
+
+          Scan: Any food item and receive all pertinent nutrition information. 
+
+          Swipe: To the right to approve an item and check off your grocery list, up for a one time exception, and left to reject the item.
           </p>
         </div>
       </div>
@@ -23,9 +26,9 @@ const Vision = () => (
     <section className="app-features">
         <div className="app-features-content">
           <div className="features-text">
-            <h2 className="features-title">Scan Around, Find Out.</h2>
+            <h2 className="features-title">Set, Scan, Swipe</h2>
             <p className="features-description">
-              Lorem ipsum odor amet, consectetur adipiscing elit. At justo malesuada aliquet scelerisque dignissim iaculis arcu purus. Ultricies mauris ornare ut nec habitant arcu ex class conubia.
+            We strive to make grocery shopping safer and easier, ensuring our users can confidently choose foods that supports their health and well-being.
             </p>
           </div>
           <div className="features-image-wrapper">

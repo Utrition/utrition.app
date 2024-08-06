@@ -3,28 +3,19 @@
 
 /* Define custom properties for colors */
 :root {
-  --primary-color: #14694A;
-  --text-color: #000000;
-  --background-color: #202c45;
-  --white-color: #FFFFFF;
-  --gray-color: #666666;
   --primary-font: 'Inter', sans-serif;
+  --primary-color: #202c45;
 }
 
 /* General styles */
 body {
   font-family: var(--primary-font);
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--primary-font);
-}
-
-.button {
   background-color: var(--primary-color);
-  color: var(--white-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .test-1 {
