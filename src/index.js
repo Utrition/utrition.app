@@ -48,7 +48,7 @@ ReactDOM.render(
 
       <Header/>
       <RouterProvider router={router}/>
-      
+      <Footer />
       {/* <Home/> */}
 
       {/* <Hero />

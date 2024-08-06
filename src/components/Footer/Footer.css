@@ -1,36 +1,39 @@
-.footer-container {
-    background-color: #14694a; /* Background color */
-    padding: 60px 20px;
-    text-align: center;
-    color: #fff;
+/* Footer.css */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: transparent; /* Clear background */
+  color: #b0b9c8; /* Color for the text */
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.footer-divider {
+  width: 80%;
+  border: none;
+  border-top: 1px solid rgba(176, 185, 200, 0.5); /* Thin dividing line */
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  text-align: center;
+  color: #b0b9c8; /* Ensuring the text color matches the design */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
   }
-  
-  .footer-title {
-    font-size: 2.5em;
-    font-family: 'Argent CF Extra Bold', sans-serif; 
-    margin-bottom: 20px;
+
+  .footer-divider {
+    width: 90%; /* Slightly larger width for smaller screens */
   }
-  
-  .footer-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+
+  .footer-text {
+    font-size: 0.9em; /* Slightly smaller text for readability on mobile */
   }
-  
-  .footer-input {
-    margin-right: 10px;
-    width: 300px;
-  }
-  
-  .footer-button {
-    background-color: #fff;
-    color: #14694a;
-    padding: 10px 20px;
-    font-size: 1em;
-  }
-  
-  .footer-copyright {
-    font-size: 1em;
-  }
-  
+}
