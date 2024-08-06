@@ -37,6 +37,23 @@ const Vision = () => (
       </section>
 
       {/* Our Goal */}
+      <section className="goal">
+        <div className="goal-content">
+          <div className="goal-text-left">
+            <h3 className="goal-subtitle">Our Goal</h3>
+            <h1 className="goal-title">
+              Your food, your way.
+            </h1>
+          </div>
+          <div className="goal-text-right">
+            <p className="goal-description">
+              Your diet is yours and we are here to support you in your nutritional journey. 
+              Period. Whether it’s with our our Smart Suggest, social features, or our 
+              Smart Scan every time you go grocery shopping.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 );
 
