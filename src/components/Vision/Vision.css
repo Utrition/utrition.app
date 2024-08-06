@@ -15,12 +15,15 @@
   width: 100%;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative; /* Ensure text is above the gradient */
+  z-index: 1; /* Ensure text is above the gradient */
 }
 
 .vision-text-left {
   flex: 1;
   max-width: 40%;
   padding-right: 40px; /* Adjust for spacing between title and description */
+  position: relative; /* Allow pseudo-element positioning */
 }
 
 .vision-subtitle {
@@ -31,23 +34,43 @@
 }
 
 .vision-title {
-  font-size: 3em; /* Adjusted size to match the mockup */
+  font-size: 2.5em; /* Adjusted size to match the mockup */
   font-weight: 600;
   line-height: 1.2;
   margin: 0;
+  position: relative; /* For pseudo-element positioning */
+  z-index: 1; /* Ensure the title is above the gradient */
+}
+
+/* Add a floating radial gradient peeking out of the left side of the page to emphasize the title */
+.vision-title::before {
+  content: "";
+  position: absolute;
+  left: -200px;
+  top: -100px;
+  width: 750px;
+  height: 750px;
+  background: radial-gradient(rgba(77,236,109) 0%, rgba(136,224,195, 0.4) 0%, transparent 65%);
+  border-radius: 50%;
+  z-index: -1; /* Place it behind content */
+  pointer-events: none;
 }
 
 .vision-text-right {
   flex: 1;
-  max-width: 60%;
+  max-width: 50%;
   padding-left: 40px; /* Adjust for spacing between title and description */
 }
 
 .vision-description {
-  font-size: 1.7em; /* Slightly smaller for visual hierarchy */
-  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  font-size: 1.8em; /* Slightly smaller for visual hierarchy */
+  line-height: 1.7;
   color: #b0b9c8;
   font-weight: 100;
+  /* Vertically align the text in the container */
+  margin-top: 20px;
 }
 
 /* AppFeatures Section */
@@ -72,6 +95,7 @@
   border-radius: 50px; /* Rounded corners for the grey box */
   overflow: hidden; /* Ensures content stays within rounded corners */
   margin: 0; /* Remove any default margin that might cause gaps */
+  z-index: 2;
 }
 
 .features-text {
@@ -146,8 +170,9 @@
   }
 
   .vision-description {
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding: 0 0.25em;
+    font-weight: 200;
   }
 
   /* AppFeatures Section */
