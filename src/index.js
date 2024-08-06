@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
@@ -16,6 +16,9 @@ import './index.css';
 
 
 export default function App() {
+
+  const [isOpen, open] = useState(false);
+
   return (
     <div className="App">
       <Header/>
@@ -48,3 +51,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+

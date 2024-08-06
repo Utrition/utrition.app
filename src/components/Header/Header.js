@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 import Signup from '../Signup/Signup'
 
-export default function Header() {
+export default function Header({openModal}) {
   return (
     <header className="header">
 
@@ -18,7 +18,9 @@ export default function Header() {
         </nav>
 
 
-        <Signup/>
+        <Signup
+          openModal={openModal}
+        />
 
 
 
