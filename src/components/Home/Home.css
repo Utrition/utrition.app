@@ -1,0 +1,48 @@
+.home-page {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.home-page section {
+    margin-bottom:  40px;
+}
+
+.p-information {
+    font-weight: 300;
+}
+
+
+#theProblem {
+    color: rgb(255, 128, 128);
+    text-align: center;
+}
+.home-page div h1 {
+    padding: 20px,40px,60px,80px;
+}
+
+.home-the-problem {
+    background-color: rgb(50, 62, 88);
+    padding: 3%
+}
+.home-the-problem h1{
+
+    margin-bottom: 50px;
+}
+
+.home-the-problem > section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-the-problem > section div{
+    display: flex;
+}
+
+.home-the-problem p{
+    text-align: center;
+    justify-content: center;
+    color: rgb(255,255,255);
+}
