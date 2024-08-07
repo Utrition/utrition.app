@@ -17,7 +17,7 @@ const teamMembers = [
   {
     name: 'Ryan Wittmers',
     position: 'Co-Founder & COO',
-    image: `${imagePath}/ryan.JPG`,
+    image: `${imagePath}/ryan.png`,
   },
   {
     name: 'Seamus Thompson',
@@ -27,7 +27,7 @@ const teamMembers = [
   {
     name: 'Jacob Hinkston',
     position: 'Co-Founder & CTO',
-    image: `${imagePath}/jacob.JPG`,
+    image: `${imagePath}/jacob.png`,
   },
   {
     name: 'David Allen',
@@ -42,12 +42,12 @@ const teamMembers = [
   {
     name: 'Sydney Jean-Simon',
     position: 'Head of Branding & Design',
-    image: `${imagePath}/sydney.JPG`,
+    image: `${imagePath}/sydney.png`,
   },
   {
     name: 'Grant Lee',
     position: 'Head of Data Integration',
-    image: `${imagePath}/grant.jpg`,
+    image: `${imagePath}/grant.png`,
   },
   {
     name: 'Logan Barger',
