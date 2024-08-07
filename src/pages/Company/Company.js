@@ -1,7 +1,7 @@
 // Company.js
 import React from 'react';
 import './Company.css';
-import { Grid, Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
+import { Grid, Card, CardContent, CardMedia, Button } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 const imagePath = '/assets/src/pages/company';
 
