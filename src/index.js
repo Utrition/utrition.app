@@ -23,15 +23,18 @@ export default function App() {
     <div className="App">
       <Header/>
       <RouterProvider router={createBrowserRouter([
+        // {
+        //   path: "/",
+        //   element: <Home/>
+        // },
         {
           path: "/",
-          element: <Home/>
-        },{
-          path: "/vision",
-          element: <Vision/>
+          element: <Vision/>,
+          isActive: true
         },{
           path: "/company",
-          element: <Company />
+          element: <Company />,
+          isActive: false
         }
       ])}/>
       <Footer />

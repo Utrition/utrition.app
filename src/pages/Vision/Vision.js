@@ -5,7 +5,7 @@ const Vision = () => (
     <section className="vision">
       <div className="vision-content">
         <div className="vision-text-left">
-          <h3 className="vision-subtitle">Our Vision</h3>
+          <h3 className="vision-subtitle">Our Vision at Utrition</h3>
           <h1 className="vision-title">
             Providing instant, reliable, and personalized food product information.
           </h1>

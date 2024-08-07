@@ -2,7 +2,6 @@
 .company-section {
   padding: 60px 20px;
   background-color: #202c45;
-  color: #ffffff;
   text-align: center;
 }
 
@@ -12,39 +11,120 @@
   color: #ffffff;
 }
 
-.company-grid {
+/* Wrapper to ensure grid alignment */
+.company-grid-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Center the grid within its container */
 }
 
-.team-card {
-  background-color: #2e3b55;
+.company-grid {
+  display: flex;
+  justify-content: center; /* Center the grid items horizontally */
+  flex-wrap: wrap; /* Ensure items wrap to new lines as needed */
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center; /* Center each grid item */
+}
+
+.card {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-  overflow: hidden; /* Ensures that the card contents stay within rounded borders */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px; /* Fixed height for consistency */
+  width: 100%; /* Ensure card takes up full space in grid */
+  max-width: 260px; /* Limit width to ensure consistency */
 }
 
-.team-card:hover {
+.card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(72, 172, 127, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Ease the transition in and out on hover */
+  transition: 0.3s ease-in-out;
 }
 
 .team-card-image {
-  border-radius: 15px 15px 0 0; /* Rounded corners at the top */
-  object-fit: contain; /* Ensures the image covers the entire area without stretching */
-  align-items: flex-start;
+  border-radius: 15px 15px 0 0;
+}
+
+.team-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-card-name {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 10px;
-  color: #ffffff;
+  color: #333333; /* Darker color for readability on white */
+  font-weight: bold;
 }
 
 .team-card-position {
+  font-size: 0.9em;
+  color: #666666; /* Subtle gray for secondary text */
+  margin: 5px 0;
+}
+
+/* CTA Card Styling */
+.cta-card:hover {
+  transform: none;
+}
+
+.cta-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.cta-card-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333333; /* Ensure visibility on white background */
+  text-align: center;
+}
+
+.cta-card .cta-card-button {
+  background-color: #88e0c3; /* Green accent color */
+  color: #202c45; /* Dark text for contrast */
+  padding: 10px 20px;
+  border-radius: 25px; /* Rounded corners */
+  text-transform: none; /* Disable uppercase transformation */
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: 600;
   font-size: 1em;
-  color: #b0b9c8;
+  min-width: 120px; /* Ensure the button has a consistent width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+}
+
+.cta-card-button-link {
+  /* Remove default link styling */
+  color: inherit;
+  text-decoration: none;
+}
+
+.cta-card .cta-card-button:hover {
+  background-color: #76cbb3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight hover lift */
+}
+
+/* Ensure the button icon is aligned properly */
+.cta-card-button .MuiButton-endIcon {
+  margin-left: 8px; /* Space between text and icon */
 }
 
 @media (max-width: 768px) {
@@ -52,7 +132,7 @@
     font-size: 2em;
   }
 
-  .team-card {
+  .card {
     margin-bottom: 20px;
   }
 }
