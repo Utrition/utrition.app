@@ -30,17 +30,14 @@ export default function App() {
         {
           path: "/",
           element: <Vision/>,
-          isActive: true
         },{
           path: "/company",
           element: <Company />,
-          isActive: false
         }
       ])}/>
       <Footer />
     </div>
   )
- 
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
