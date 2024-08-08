@@ -1,0 +1,39 @@
+/* Footer.css */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: transparent; /* Clear background */
+  color: #b0b9c8; /* Color for the text */
+  font-size: 1em;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.footer-divider {
+  width: 80%;
+  border: none;
+  border-top: 1px solid rgba(176, 185, 200, 0.5); /* Thin dividing line */
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  text-align: center;
+  color: #b0b9c8; /* Ensuring the text color matches the design */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-divider {
+    width: 90%; /* Slightly larger width for smaller screens */
+  }
+
+  .footer-text {
+    font-size: 0.9em; /* Slightly smaller text for readability on mobile */
+  }
+}

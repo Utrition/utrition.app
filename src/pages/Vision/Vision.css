@@ -1,0 +1,290 @@
+/* Vision.css */
+.vision {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #202c45;
+  color: #ffffff;
+  position: relative;
+}
+
+.vision-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative; /* Ensure text is above the gradient */
+  z-index: 1; /* Ensure text is above the gradient */
+}
+
+.vision-text-left {
+  flex: 1;
+  max-width: 40%;
+  padding-right: 40px; /* Adjust for spacing between title and description */
+  position: relative; /* Allow pseudo-element positioning */
+}
+
+.vision-subtitle {
+  font-size: 1.2em;
+  color: #88e0c3; /* Green accent color */
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.vision-title {
+  font-size: 2.5em; /* Adjusted size to match the mockup */
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+  position: relative; /* For pseudo-element positioning */
+  z-index: 1; /* Ensure the title is above the gradient */
+}
+
+/* Add a floating radial gradient peeking out of the left side of the page to emphasize the title */
+.vision-title::before {
+  content: "";
+  position: absolute;
+  left: -200px;
+  top: -50px;
+  width: 750px;
+  height: 750px;
+  background: radial-gradient(rgba(77,236,109) 0%, rgba(136,224,195, 0.4) 0%, transparent 65%);
+  border-radius: 50%;
+  z-index: -1; /* Place it behind content */
+  pointer-events: none;
+}
+
+.vision-text-right {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 40px; /* Adjust for spacing between title and description */
+}
+
+.vision-description,
+.goal-description {
+  display: inline;
+  align-items: left;
+  font-size: 1.8em; /* Slightly smaller for visual hierarchy */
+  line-height: 1.7;
+  color: #b0b9c8;
+  font-weight: 100;
+  /* Vertically align the text in the container */
+  margin-top: 20px;
+}
+
+.vision-description .strong-text {
+  display: inherit;
+  font-weight: 600; /* Stronger emphasis for these words */
+  color: #ffffff; /* Keep the color consistent with the theme */
+}
+
+/* AppFeatures Section */
+.app-features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Remove top and bottom padding to reduce gap */
+  background-color: #202c45; /* Same as Vision section background */
+  color: #ffffff;
+  position: relative;
+}
+
+.app-features-content {
+  display: flex;
+  max-width: 1200px;
+  height: 650px;
+  width: 100%;
+  align-items: stretch; /* Stretch items to fill the container */
+  justify-content: space-between;
+  background-color: #303c53; /* Grey box background */
+  border-radius: 50px; /* Rounded corners for the grey box */
+  overflow: hidden; /* Ensures content stays within rounded corners */
+  margin: 0; /* Remove any default margin that might cause gaps */
+  z-index: 2;
+}
+
+.features-text {
+  flex: 1;
+  padding: 20px 40px; /* Adjust padding for better fit */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the text vertically */
+}
+
+.features-title {
+  font-size: 2em;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px; /* Reduce margin to bring closer to description */
+}
+
+.features-description {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 0; /* Remove any bottom margin */
+}
+
+.features-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #92d0b4; /* Green box background */
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.phone-background {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+.phone-image {
+  height: 600px; /* Adjust translation to reduce gap */
+}
+
+/* Goal Section */
+.goal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #202c45;
+  color: #ffffff;
+  position: relative;
+}
+
+.goal-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative; /* Ensure text is above the gradient */
+  z-index: 1; /* Ensure text is above the gradient */
+}
+
+.goal-text-left {
+  flex: 1;
+  max-width: 40%;
+  padding-right: 40px; /* Adjust for spacing between title and description */
+  position: relative; /* Allow pseudo-element positioning */
+}
+
+.goal-subtitle {
+  font-size: 1.2em;
+  color: #88e0c3; /* Green accent color */
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.goal-title {
+  font-size: 2.5em; /* Adjusted size to match the mockup */
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+  position: relative; /* For pseudo-element positioning */
+  z-index: 1; /* Ensure the title is above the gradient */
+}
+
+.goal-text-right {
+  flex: 1;
+  max-width: 60%;
+  padding-left: 40px; /* Adjust for spacing between title and description */
+}
+
+.goal-description {
+  display: flex;
+  align-items: center;
+  font-size: 1.8em; /* Slightly smaller for visual hierarchy */
+  line-height: 1.7;
+  color: #b0b9c8;
+  font-weight: 100;
+  /* Vertically align the text in the container */
+  margin-top: 20px;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  
+  .vision-title::before {
+    top: -100px;
+    left: -250px;
+    width: 400px;
+    height: 400px;
+  }
+
+  .vision-content, .goal-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision-text-left,
+  .vision-text-right,
+  .goal-text-left,
+  .goal-text-right {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .vision-subtitle, .goal-subtitle {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .vision-title, .goal-title {
+    font-size: 2.5em;
+    padding: 0.3em 0.25em;
+    text-align: center;
+  }
+
+  .vision-description, .goal-description {
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: center;
+  }
+  .vision-description .strong-text {
+    font-weight: 600;
+  }
+
+  /* AppFeatures Section */
+  .app-features-content {
+    flex-direction: column; /* Stack items vertically */
+    border-radius: 50px; /* Full border-radius when stacked */
+    align-items: center; /* Center items in column layout */
+    height: auto;
+  }
+
+  .features-text {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .features-image-wrapper {
+    background-color: #92d0b4; /* Maintain green box background */
+    border-radius: 50px; /* Rounded corners for the wrapper */
+    max-height: 400px; /* Adjust height for smaller screens */
+  }
+
+  .features-title {
+    font-size: 1.8em;
+  }
+
+  .features-description {
+    font-size: 1em;
+    margin: 15px 0;
+  }
+
+  .phone-image {
+    transform: translateY(25px); /* Further adjust for mobile */
+    height: 425px;
+  }
+}
