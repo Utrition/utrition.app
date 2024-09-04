@@ -1,48 +1,114 @@
-.home-page {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+/* Home.css */
+
+/* Hero Section */
+.hero-section {
+  background-color: #202c45;
+  text-align: center;
+  padding: 250px 20px;
+  background: radial-gradient(circle at center, #4dec6d -100%, transparent 35%);
+  position: relative;
+  z-index: 1;
 }
 
-.home-page section {
-    margin-bottom:  40px;
+.hero-content {
+  z-index: 2; /* Ensure the content is always above the gradient */
+  position: relative;
 }
 
-.p-information {
-    font-weight: 300;
+.hero-title {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: #202c45 0 0 2px;
 }
 
-
-#theProblem {
-    color: rgb(255, 128, 128);
-    text-align: center;
-}
-.home-page div h1 {
-    padding: 20px,40px,60px,80px;
-}
-
-.home-the-problem {
-    background-color: rgb(50, 62, 88);
-    padding: 3%
-}
-.home-the-problem h1{
-
-    margin-bottom: 50px;
+.hero-description {
+  color: #b0b9c8;
+  font-size: 1.7rem;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 20px;
+  line-height: 1.5;
+  font-weight: 200;
 }
 
-.home-the-problem > section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* The Difficulty Section */
+.difficulty-section {
+  background-color: #303c53;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 50px;
 }
 
-.home-the-problem > section div{
-    display: flex;
+.difficulty-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.home-the-problem p{
-    text-align: center;
-    justify-content: center;
-    color: rgb(255,255,255);
+.difficulty-subtitle {
+  color: #b0b9c8;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
 }
+
+.difficulty-stats {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat {
+  color: #ffffff;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 3rem;
+  color: #4dec4d;
+}
+
+.stat p {
+  font-size: 1.1rem;
+}
+
+/* UTRITION is Section */
+.utrition-section {
+  background-color: #202c45;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.utrition-title {
+  color: #4dec4d;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.utrition-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature {
+  color: #ffffff;
+  text-align: center;
+}
+
+.feature h3 {
+  color: #4dec4d;
+  font-size: 1.5rem;
+}
+
+.feature p {
+  font-size: 1.2rem;
+}
+
+/* CTA Section */

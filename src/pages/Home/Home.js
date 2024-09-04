@@ -1,37 +1,69 @@
-import React from 'react'
-import './Home.css'
+// Home.js
+
+import React from 'react';
+import './Home.css';
 
 export default function Home() {
   return (
-    <main className="home-page">
-        <section>
-            <h1>Catalyzing Health with AI</h1>
-            <p className="p-information">Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore.</p>
-        </section>
-        
-        <h2> We are a company committed to wellness and Ai lorem
-        ipsum I think Seamus will have the official text. </h2>
-        <section className="home-the-problem">
-            <h1 id="theProblem">The Problem</h1>
-            <p className="p-information">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim.
-            </p>
-            <section>
-                <div className="the-problem-h1-section">
-                    <h1>20%</h1>
-                    <p className="p-information">Say it’s a lack of knowledge</p>
-                </div>
-                <div>
-                    <h1>23%</h1>
-                    <p className="p-information">Think it takes too much time</p>
-                </div>
-                <div>
-                    <h1>40%</h1>
-                    <p className="p-information">Believe it’s too expensive</p>
-                </div>
-            </section>
-        </section>
-    </main>
-  )
+    <div className="home-page">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="hero-title">Catalyzing Health with AI</h1>
+          <p className="hero-description">
+            We’re improving global well-being by utilizing AI to simplify food information and access for everyone
+          </p>
+        </div>
+      </section>
+
+      {/* Difficulty Section */}
+      <section className="difficulty-section">
+        <h2 className="difficulty-title">The Difficulty</h2>
+        <p className="difficulty-subtitle">
+          It's hard to find what's right for you. A staggering <strong>83%</strong> of Americans say they want to eat healthier but aren’t able to.
+        </p>
+        <div className="difficulty-stats">
+          <div className="stat">
+            <h3>20%</h3>
+            <p>Say it's a lack of knowledge</p>
+          </div>
+          <div className="stat">
+            <h3>23%</h3>
+            <p>Think it takes too much time</p>
+          </div>
+          <div className="stat">
+            <h3>40%</h3>
+            <p>Believe it’s too expensive</p>
+          </div>
+        </div>
+      </section>
+
+      {/* UTRITION is Section */}
+      <section className="utrition-section">
+        <h2 className="utrition-title">UTRITION is...</h2>
+        <div className="utrition-features">
+          <div className="feature">
+            <h3>01</h3>
+            <p>Community</p>
+          </div>
+          <div className="feature">
+            <h3>02</h3>
+            <p>Personalized Diets</p>
+          </div>
+          <div className="feature">
+            <h3>03</h3>
+            <p>Artificial Intelligence</p>
+          </div>
+          <div className="feature">
+            <h3>04</h3>
+            <p>Transparency & Education</p>
+          </div>
+          <div className="feature">
+            <h3>05</h3>
+            <p>Fitness & Lifestyle</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
