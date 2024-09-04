@@ -31,7 +31,6 @@
 }
 
 .card {
-  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
   overflow: hidden;
@@ -40,7 +39,7 @@
   justify-content: space-between;
   height: 350px; /* Fixed height for consistency */
   width: 100%; /* Ensure card takes up full space in grid */
-  max-width: 260px; /* Limit width to ensure consistency */
+  max-width: 280px; /* Limit width to ensure consistency */
 }
 
 .card:hover {

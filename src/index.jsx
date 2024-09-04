@@ -8,7 +8,7 @@ import Vision from './pages/Vision/Vision';
 import Company from './pages/Company/Company';
 import Footer from './components/Footer/Footer';
 
-// Analytics
+// Vercel Analytics
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react"
 

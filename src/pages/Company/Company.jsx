@@ -3,11 +3,13 @@ import React from 'react';
 import './Company.css';
 import { Grid, Card, CardContent, CardMedia, Button } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import FadeIn from 'react-fade-in';
+
+
 const imagePath = '/assets/src/pages/company';
 
-
-
 // Example team data
+
 const teamMembers = [
   {
     name: 'Connor Thompson',
@@ -66,7 +68,8 @@ const teamMembers = [
   },
   // Add more team members here
 
-  // Add CTA card
+
+  // Add CTA card - this is
   {
     isCTA: true, // Indicate this is the CTA card
     title: 'Interested in getting exclusive insights?',
@@ -77,6 +80,7 @@ const teamMembers = [
 const Company = () => {
   return (
     <div className="company-section">
+      <FadeIn>
       <h2 className="company-title">Meet the Team</h2>
       <div className="company-grid-wrapper">
         <Grid container spacing={4} justifyContent="center" className="company-grid">
@@ -121,6 +125,7 @@ const Company = () => {
           ))}
         </Grid>
       </div>
+      </FadeIn>
     </div>
   );
 };
