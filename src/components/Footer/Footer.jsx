@@ -4,7 +4,7 @@ import './Footer.css';
 /**
  * Renders the Footer component with the title, email input, sign up button, and copyright information.
  *
- * @return {JSX.Element} The rendered Footer component
+ * @return {TSX.Element} The rendered Footer component
  */
 const Footer = () => {
   return (

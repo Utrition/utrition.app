@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './Home.css';
+import CountUp from 'react-countup';
 
 export default function Home() {
   return (
@@ -24,16 +25,16 @@ export default function Home() {
         </p>
         <div className="difficulty-stats">
           <div className="stat">
-            <h3>20%</h3>
+            <h3><CountUp start={0} end={20} duration={4} />%</h3>
             <p>Say it's a lack of knowledge</p>
           </div>
           <div className="stat">
-            <h3>23%</h3>
+            <h3><CountUp start={0} end={23} duration={4} />%</h3>
             <p>Think it takes too much time</p>
           </div>
           <div className="stat">
-            <h3>40%</h3>
-            <p>Believe it’s too expensive</p>
+            <h3><CountUp start={0} end={40} duration={3} />%</h3>
+            <p>Believe it is too expensive</p>
           </div>
         </div>
       </section>

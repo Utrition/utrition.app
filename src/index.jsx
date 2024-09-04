@@ -32,11 +32,20 @@ export default function App() {
   );
 }
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-    <SpeedInsights />
-    <Analytics />
-  </React.StrictMode>
-);
+if (typeof window !== 'undefined' && typeof document !== 'undefined') {
+  const root = document.getElementById('root');
+  if (root) {
+    ReactDOM.createRoot(root).render(
+      <React.StrictMode>
+        <App />
+        <SpeedInsights />
+        <Analytics />
+      </React.StrictMode>
+    );
+  } else {
+    console.error('Could not find the root element in the DOM');
+  }
+} else {
+  console.error('Could not find the window or document objects');
+}
 
