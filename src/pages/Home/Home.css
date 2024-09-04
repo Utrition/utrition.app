@@ -1,6 +1,6 @@
 /* Home.css */
 
-/* Hero Section */
+/******** Hero Section ********/
 .hero-section {
   background-color: #202c45;
   text-align: center;
@@ -33,26 +33,30 @@
   font-weight: 200;
 }
 
-/* The Difficulty Section */
+/******** The Difficulty Section ********/
 .difficulty-section {
-  background-color: #303c53;
-  padding: 80px 20px;
-  text-align: center;
-  border-radius: 50px;
+  background-color: #313e58;
+  padding: 50px 20px;
+  border-radius: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .difficulty-title {
   color: #ffffff;
   font-size: 2.5rem;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .difficulty-subtitle {
-  color: #b0b9c8;
+  color: #e0e0e0;
   font-size: 1.3rem;
   margin-bottom: 40px;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto 40px auto;
+  font-weight: 300;
+  text-align: center;
 }
 
 .difficulty-stats {
@@ -69,7 +73,7 @@
 
 .stat h3 {
   font-size: 3rem;
-  color: #4dec4d;
+  font-weight: 900;
 }
 
 .stat p {

@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        <h1 className="header-main-text">UTRITION</h1>
+        <h1 className="header-main-text"><a href="#/">Utrition</a></h1>
         <nav>
           <a href="#/"><h3>Home</h3></a>
           <a href="#/vision"><h3>Vision</h3></a>

@@ -21,11 +21,13 @@
   margin: 0 auto; /* Center the container */
 }
 
-.header-main-text {
+.header-main-text a {
   font-size: 2.5rem;
   color: #4dec4d;
   font-weight: bold;
   margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 nav {

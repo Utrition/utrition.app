@@ -20,7 +20,7 @@ export default function Home() {
       <section className="difficulty-section">
         <h2 className="difficulty-title">The Difficulty</h2>
         <p className="difficulty-subtitle">
-          It's hard to find what's right for you. A staggering <strong>83%</strong> of Americans say they want to eat healthier but aren’t able to.
+          It's hard to find what's right for you. <br></br>A staggering <strong>83%</strong> of Americans say they want to eat healthier but aren’t able to.
         </p>
         <div className="difficulty-stats">
           <div className="stat">
@@ -45,6 +45,9 @@ export default function Home() {
           <div className="feature">
             <h3>01</h3>
             <p>Community</p>
+            <p>We are only as strong as those around us. We’re creating a
+             place for you, our users, to follow and share your friends 
+             interests and preferences. </p>
           </div>
           <div className="feature">
             <h3>02</h3>
