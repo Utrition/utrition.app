@@ -5,7 +5,7 @@
   background-color: #202c45;
   text-align: center;
   padding: 250px 20px;
-  background: radial-gradient(circle at center, #4dec6d -100%, transparent 35%);
+  background: radial-gradient(circle at center, #4dec6d -100%, transparent 30%);
   position: relative;
   z-index: 1;
 }
@@ -19,7 +19,6 @@
   color: #ffffff;
   font-size: 4rem;
   font-weight: bold;
-  margin-bottom: 10px;
   text-shadow: #202c45 0 0 2px;
 }
 
@@ -83,36 +82,37 @@
 /* UTRITION is Section */
 .utrition-section {
   background-color: #202c45;
-  padding: 100px 20px;
-  text-align: center;
+  margin: 0 auto;
+  padding: 50px 20px;
+  max-width: 1200px;
 }
 
 .utrition-title {
-  color: #4dec4d;
+  color: #4dec6d;
   font-size: 2.5rem;
   margin-bottom: 50px;
 }
 
 .utrition-features {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .feature {
-  color: #ffffff;
-  text-align: center;
+  color: #cccccc;
 }
 
 .feature h3 {
-  color: #4dec4d;
-  font-size: 1.5rem;
+  color: #4dec6d;
+  font-size: 2rem;
 }
 
 .feature p {
   font-size: 1.2rem;
+  font-weight: 200;
 }
 
 /* CTA Section */

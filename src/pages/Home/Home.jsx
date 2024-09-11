@@ -41,32 +41,32 @@ export default function Home() {
           </div>
         </section>
 
-        {/* UTRITION is Section */}
+        {/* "UTRITION is" Section */}
         <section className="utrition-section">
           <h2 className="utrition-title">UTRITION is...</h2>
           <div className="utrition-features">
             <div className="feature">
-              <h3>01</h3>
-              <p>Community</p>
+              <h3 className="feature-number">01</h3>
+              <h3 className="feature-title">Community</h3>
               <p>We are only as strong as those around us. We’re creating a
               place for you, our users, to follow and share your friends 
               interests and preferences. </p>
             </div>
             <div className="feature">
-              <h3>02</h3>
+              <h3 className="feature-number">02</h3>
               <p>Personalized Diets</p>
             </div>
             <div className="feature">
-              <h3>03</h3>
-              <p>Artificial Intelligence</p>
+              <h3 className="feature-number">03</h3>
+              <h3 className="feature-title">Artificial Intelligence</h3>
             </div>
             <div className="feature">
-              <h3>04</h3>
-              <p>Transparency & Education</p>
+              <h3 className="feature-number">04</h3>
+              <h3 className="feature-title">Transparency & Education</h3>
             </div>
             <div className="feature">
-              <h3>05</h3>
-              <p>Fitness & Lifestyle</p>
+              <h3 className="feature-number">05</h3>
+              <h3 className="feature-title">Fitness & Lifestyle</h3>
             </div>
           </div>
         </section>

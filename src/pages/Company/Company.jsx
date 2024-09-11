@@ -81,7 +81,7 @@ const Company = () => {
   return (
     <div className="company-section">
       <FadeIn>
-      <h2 className="company-title">Meet the Team</h2>
+      <h1 className="company-title">Meet the Team</h1>
       <div className="company-grid-wrapper">
         <Grid container spacing={4} justifyContent="center" className="company-grid">
           {teamMembers.map((member, index) => (
