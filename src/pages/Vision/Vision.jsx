@@ -1,9 +1,7 @@
 import './Vision.css';
-import FadeIn from 'react-fade-in';
 
 const Vision = () => (
   <main>
-    <FadeIn>
       <section className="vision">
         <div className="vision-content">
           <div className="vision-text-left">
@@ -58,7 +56,6 @@ const Vision = () => (
             </div>
           </div>
         </section>
-      </FadeIn>
     </main>
 );
 

@@ -3,12 +3,9 @@ import React from 'react';
 import './Company.css';
 import { Grid, Card, CardContent, CardMedia, Button } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import FadeIn from 'react-fade-in';
 
 
 const imagePath = '/assets/src/pages/company';
-
-// Example team data
 
 const teamMembers = [
   {
@@ -80,7 +77,6 @@ const teamMembers = [
 const Company = () => {
   return (
     <div className="company-section">
-      <FadeIn>
       <h1 className="company-title">Meet the Team</h1>
       <div className="company-grid-wrapper">
         <Grid container spacing={4} justifyContent="center" className="company-grid">
@@ -125,7 +121,6 @@ const Company = () => {
           ))}
         </Grid>
       </div>
-      </FadeIn>
     </div>
   );
 };

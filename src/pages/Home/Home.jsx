@@ -3,13 +3,11 @@
 import React from "react";
 import "./Home.css";
 import CountUp from "react-countup";
-import FadeIn from "react-fade-in";
 import SignUpButton from "../../components/SignUpButton/SignUpButton";
 
 export default function Home() {
   return (
     <div className="home-page">
-      <FadeIn>
         {/* Hero Section */}
         <section className="hero-section">
           <div className="hero-content">
@@ -106,7 +104,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </FadeIn>
     </div>
   );
 }
