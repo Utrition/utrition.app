@@ -24,7 +24,7 @@ export default function App() {
           {/* Define your routes here */}
           <Route path="/" element={<Home />} />
           <Route path="/vision" element={<Vision />} />
-          <Route path="/company" element={<Company />} />
+          {/* Removing from visibility for now. <Route path="/company" element={<Company />} /> */}
         </Routes>
       </HashRouter>
       <Footer />

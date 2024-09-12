@@ -1,9 +1,8 @@
 import React from 'react';
 import './Header.css';
-import Button from '@mui/material/Button';
-import { ArrowForwardIos } from '@mui/icons-material';
+import SignUpButton from '../SignUpButton/SignUpButton';
 
-export default function Header() {
+export default function Header()  {
   return (
     <header className="header">
       <div className="header-container">
@@ -11,14 +10,11 @@ export default function Header() {
         <nav>
           <a href="#/"><h3>Home</h3></a>
           <a href="#/vision"><h3>Vision</h3></a>
-          <a href="#/company"><h3>Company</h3></a>
+          {/* Removing for now along with route in index.js. <a href="#/company"><h3>Company</h3></a> */}
         </nav>
-        <Button variant="contained" className="header-button">
-          <a href="https://forms.gle/ZEHKrHQyYDRX9GCB8" target="_blank" rel="noopener noreferrer">
-            Sign Up
-          </a>
-          <ArrowForwardIos className="header-button-icon" />
-        </Button>
+        
+        {/* Sign Up Button Component */}
+        <SignUpButton className="header-signup-button"/>
       </div>
     </header>
   );
