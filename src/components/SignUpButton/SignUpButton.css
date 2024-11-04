@@ -9,17 +9,18 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s;
-  }
-  
-  .signup-button a {
-    text-decoration: none;
-  }
+}
 
-  .signup-button a:visited {
-    color: #202c45;
-  }
-  
-  .signup-button-icon {
+.signup-button a {
+    text-decoration: none;
+    color: #202c45 !important;
+}
+
+.signup-button a:visited {
+    color: #202c45 !important;
+}
+
+.signup-button-icon {
     margin-left: 8px;
     font-size: 1rem;
-  }
+}
