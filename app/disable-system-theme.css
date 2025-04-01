@@ -1,0 +1,30 @@
+/* This file disables automatic system theme detection when a user has made a manual choice */
+/* @media (prefers-color-scheme: dark) {
+  html[data-theme-source="manual"] {
+    color-scheme: unset !important;
+  }
+  
+  html[data-theme-source="manual"]:not(.dark) * {
+    --tw-prose-body: var(--tw-prose-body-light) !important;
+    --tw-prose-headings: var(--tw-prose-headings-light) !important;
+    --tw-prose-links: var(--tw-prose-links-light) !important;
+    --tw-prose-code: var(--tw-prose-code-light) !important;
+    --tw-bg: var(--tw-bg-light) !important;
+    --tw-text: var(--tw-text-light) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html[data-theme-source="manual"] {
+    color-scheme: unset !important;
+  }
+  
+  html[data-theme-source="manual"].dark * {
+    --tw-prose-body: var(--tw-prose-body-dark) !important;
+    --tw-prose-headings: var(--tw-prose-headings-dark) !important;
+    --tw-prose-links: var(--tw-prose-links-dark) !important;
+    --tw-prose-code: var(--tw-prose-code-dark) !important;
+    --tw-bg: var(--tw-bg-dark) !important;
+    --tw-text: var(--tw-text-dark) !important;
+  }
+}  */

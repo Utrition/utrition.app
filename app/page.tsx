@@ -42,7 +42,7 @@ export default function Home() {
 
       {/* Problem Section */}
       <section className="container mx-auto px-6 py-16 md:py-24">
-        <div className="bg-[#F7F7F7] dark:bg-gray-800 rounded-3xl p-8 md:p-12">
+        <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-3xl p-8 md:p-12">
           <div className="flex flex-col md:flex-row gap-8 md:gap-16">
             <div className="md:w-1/2">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal mb-4 leading-tight">
@@ -76,14 +76,14 @@ export default function Home() {
       </section>
 
       {/* Stress Section */}
-      <section className="container mx-auto px-6 py-16 md:py-24 text-center max-w-4xl">
+      <section id="stress" className="container mx-auto px-6 py-16 md:py-24 text-center max-w-4xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal mb-6 leading-tight">
           The Stress of Navigating on Your Own.
         </h2>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-4">
           Navigating food choices can be frustrating. You risk eating hidden allergens or ingredients that don't fit
           your diet, spend time reading confusing labels, and end up wasting money on foods that don't work for you.
-          With <span className="text-primary font-normal">UTRITION</span>, just scan and get clear, instant answers. No
+          With <span className="text-[#00D37F] font-normal">UTRITION</span>, just scan and get clear, instant answers. No
           more guesswork.
         </p>
       </section>
@@ -96,7 +96,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Feature 1 */}
-          <div className="bg-[#F7F7F7] dark:bg-gray-800 rounded-[20px] p-8">
+          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
             <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
               <CheckIcon />
             </div>
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
 
           {/* Feature 2 */}
-          <div className="bg-[#F7F7F7] dark:bg-gray-800 rounded-[20px] p-8">
+          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
             <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
               <CheckIcon />
             </div>
@@ -120,7 +120,7 @@ export default function Home() {
           </div>
 
           {/* Feature 3 */}
-          <div className="bg-[#F7F7F7] dark:bg-gray-800 rounded-[20px] p-8">
+          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
             <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
               <CheckIcon />
             </div>
@@ -132,7 +132,7 @@ export default function Home() {
           </div>
 
           {/* Feature 4 */}
-          <div className="bg-[#F7F7F7] dark:bg-gray-800 rounded-[20px] p-8">
+          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
             <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
               <CheckIcon />
             </div>
@@ -143,7 +143,7 @@ export default function Home() {
           </div>
 
           {/* Feature 5 */}
-          <div className="bg-[#F7F7F7] dark:bg-gray-800 rounded-[20px] p-8">
+          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
             <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
               <CheckIcon />
             </div>
@@ -155,7 +155,7 @@ export default function Home() {
           </div>
 
           {/* CTA Card */}
-          <div className="bg-[#F7F7F7] dark:bg-gray-800 rounded-[20px] p-8 flex flex-col justify-between">
+          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8 flex flex-col justify-between">
             <div>
               <h3 className="text-2xl font-normal mb-4">Let's Simplify Your Shopping Experience</h3>
             </div>
@@ -170,12 +170,12 @@ export default function Home() {
 
       {/* Set. Scan. Swipe. Section */}
       <section className="container mx-auto px-6 py-16 md:py-24">
-        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">
-          <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal mb-6 leading-tight text-[#00D37F]">
+        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 ">
+          <div className="md:w-1/2 ">
+            <h2 className="text-3xl md:text-4xl lg:text-7xl font-normal mb-6 leading-tight text-[#00D37F]">
               Set. Scan. Swipe.
             </h2>
-            <p className="text-lg text-[#0F2830] md:text-xl text-gray-600 dark:text-white">
+            <p className="text-lg text-[#0F2830] md:text-4xl text-gray-600 dark:text-white">
               Smarter eating in three simple steps: set your dietary preferences, scan any food item with your phone,
               and choose the best options that fit your lifestyle. With{" "}
               <span className="text-[#00D37F] font-normal">UTRITION</span>, making informed food choices has never been
@@ -190,7 +190,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-6 py-16 md:py-24">
-        <div className="bg-[#1E1E1E] dark:bg-gray-900 rounded-[38px] p-8 md:p-16 text-center text-white max-w-[1359px] mx-auto shadow-lg">
+        <div className="bg-[#1E1E1E] dark:bg-[#4C4C4C] rounded-[38px] p-8 md:p-16 text-center text-white max-w-[1359px] mx-auto shadow-lg">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6 leading-tight text-white">
             We Make it Easy for You
           </h2>
@@ -226,4 +226,3 @@ export default function Home() {
     </main>
   )
 }
-

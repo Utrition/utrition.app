@@ -42,10 +42,9 @@ export default function RootLayout({
           `
         }} />
       </head>
-      <body className={`${beVietnamPro.variable} font-sans bg-white dark:bg-gray-950 text-[#0F2830] dark:text-white`}>
+      <body className={`${beVietnamPro.variable} font-sans bg-white dark:bg-[#2C2C2C] text-[#0F2830] dark:text-white`}>
         {children}
       </body>
     </html>
   )
 }
-
