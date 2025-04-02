@@ -23,14 +23,16 @@ export default function Home() {
           </div>
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <button className="px-6 py-2 bg-[#00D37F] text-white rounded-[50px] hover:bg-[#00B26C] transition duration-300 inline-block">
-              Sign Up
-            </button>
+            <Link href="https://utrition.notion.site/12fbcc38ac63802ea0b0c49950dc2512?pvs=105">
+              <button className="px-6 py-2 bg-[#00D37F] text-white rounded-[50px] hover:bg-[#00B26C] transition duration-300 inline-block">
+                Sign Up
+              </button>
+            </Link>
           </div>
         </header>
 
         {/* Hero Section */}
-        <section className="container mx-auto px-6 py-16 md:py-24 text-center max-w-5xl flex-grow flex flex-col justify-center">
+        <section className="container mx-auto px-6 py-16 md:py-24 text-center max-w-7xl flex-grow flex flex-col justify-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal mb-6 leading-tight whitespace-nowrap">
             Catalyzing Health with AI.
           </h1>
@@ -39,9 +41,13 @@ export default function Home() {
             food information and access for everyone.
           </p>
           <div className="inline-block">
-            <button className="px-8 py-3 border border-[#00D37F] text-text dark:text-white rounded-[50px] hover:bg-[#00D37F] hover:text-white transition duration-300">
-              Learn More
-            </button>
+            <div className="inline-block">
+              <Link href="#stress">
+                <button className="px-8 py-3 border border-[#00D37F] text-text dark:text-white rounded-[50px] hover:bg-[#00D37F] hover:text-white transition duration-300">
+                  Learn More
+                </button>
+              </Link>
+            </div>
           </div>
         </section>
       </div>
@@ -194,9 +200,11 @@ export default function Home() {
               </h3>
             </div>
             <div className="mt-8">
-              <button className="px-6 py-2 bg-[#00D37F] text-white rounded-[50px] hover:bg-[#00B26C] transition duration-300 inline-block">
-                Sign Up
-              </button>
+              <Link href="https://utrition.notion.site/12fbcc38ac63802ea0b0c49950dc2512?pvs=105">
+                <button className="px-6 py-2 bg-[#00D37F] text-white rounded-[50px] hover:bg-[#00B26C] transition duration-300 inline-block">
+                  Sign Up
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -234,9 +242,11 @@ export default function Home() {
             <span className="text-[#00D37F] font-normal">UTRITION</span> and get
             personalized recommendations tailored to your lifestyle.
           </p>
-          <button className="px-8 py-3 bg-[#00D37F] text-white rounded-[50px] hover:bg-[#00B26C] transition duration-300 inline-block">
-            Sign Up
-          </button>
+          <Link href="https://utrition.notion.site/12fbcc38ac63802ea0b0c49950dc2512?pvs=105">
+            <button className="px-8 py-3 bg-[#00D37F] text-white rounded-[50px] hover:bg-[#00B26C] transition duration-300 inline-block">
+              Sign Up
+            </button>
+          </Link>
         </div>
       </section>
 
