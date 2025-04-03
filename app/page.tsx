@@ -3,10 +3,11 @@ import Link from "next/link";
 import { CheckIcon } from "./components/check-icon";
 import { ThemeToggle } from "./components/theme-toggle";
 import { ThemeAwareScreenshotCSS } from "./components/theme-aware-screenshot-css";
+import { features } from "./data/features";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden bg-[var(--background)]">
       {/* Header and Hero Wrapper */}
       <div className="min-h-screen flex flex-col">
         {/* Header */}
@@ -24,7 +25,7 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <ThemeToggle />
             <Link href="https://utrition.notion.site/12fbcc38ac63802ea0b0c49950dc2512?pvs=105">
-              <button className="px-6 py-2 bg-[#00D37F] text-white rounded-[50px] hover:bg-[#00B26C] transition duration-300 inline-block">
+              <button className="px-6 py-2 border-color-primary bg-[var(--primary)] text-white font-semibold rounded-[50px] hover:opacity-90 transition duration-300 inline-block">
                 Sign Up
               </button>
             </Link>
@@ -36,14 +37,14 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal mb-6 leading-tight whitespace-nowrap">
             Catalyzing Health with AI.
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 text-gray-600 dark:text-gray-300">
+          <p className="text-lg md:text-xl lg:text-2xl mb-8 text-[var(--text)]">
             We&apos;re improving global well-being by utilizing AI to simplify
             food information and access for everyone.
           </p>
           <div className="inline-block">
             <div className="inline-block">
               <Link href="#stress">
-                <button className="px-8 py-3 border border-[#00D37F] text-text dark:text-white rounded-[50px] hover:bg-[#00D37F] hover:text-white transition duration-300">
+                <button className="px-8 py-3 border border-[var(--primary)] text-text font-semibold rounded-[50px] hover:bg-[#00D37F] hover:text-white transition duration-300">
                   Learn More
                 </button>
               </Link>
@@ -54,15 +55,15 @@ export default function Home() {
 
       {/* Problem Section */}
       <section className="container mx-auto px-6 py-16 md:py-24">
-        <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-3xl p-8 md:p-12">
+        <div className="bg-[var(--subsection)] rounded-4xl p-8 md:p-12">
           <div className="flex flex-col md:flex-row gap-8 md:gap-16">
             <div className="md:w-1/2">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal mb-4 leading-tight">
+              <h2 className="text-[var(--text)] text-3xl md:text-4xl lg:text-5xl font-normal mb-4 leading-tight">
                 It&apos;s Hard to Find What&apos;s Right for You.
               </h2>
             </div>
             <div className="md:w-1/2">
-              <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300">
+              <p className="text-lg md:text-xl text-[var(--text)] ">
                 With endless options and confusing labels, healthy eating can
                 feel overwhelming. Whether you&apos;re short on time or unsure
                 where to start, finding the right foods shouldn&apos;t be this
@@ -74,26 +75,26 @@ export default function Home() {
           {/* Stats Section */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-12">
             <div className="text-center">
-              <p className="text-5xl md:text-6xl lg:text-7xl font-normal text-[#00D37F] mb-4">
+              <p className="text-5xl md:text-6xl lg:text-7xl font-normal text-[var(--primary)] mb-4">
                 20%
               </p>
-              <p className="text-lg dark:text-gray-300">
+              <p className="text-lg">
                 Say it&apos;s a lack of knowledge
               </p>
             </div>
             <div className="text-center">
-              <p className="text-5xl md:text-6xl lg:text-7xl font-normal text-[#00D37F] mb-4">
+              <p className="text-5xl md:text-6xl lg:text-7xl font-normal text-[var(--primary)] mb-4">
                 23%
               </p>
-              <p className="text-lg dark:text-gray-300">
+              <p className="text-lg">
                 Think it takes too much time
               </p>
             </div>
             <div className="text-center">
-              <p className="text-5xl md:text-6xl lg:text-7xl font-normal text-[#00D37F] mb-4">
+              <p className="text-5xl md:text-6xl lg:text-7xl font-normal text-[var(--primary)] mb-4">
                 40%
               </p>
-              <p className="text-lg dark:text-gray-300">
+              <p className="text-lg">
                 Believe it is too expensive
               </p>
             </div>
@@ -109,7 +110,7 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal mb-6 leading-tight">
           The Stress of Navigating on Your Own.
         </h2>
-        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-4">
+        <p className="text-lg md:text-xl">
           Navigating food choices can be frustrating. You risk eating hidden
           allergens or ingredients that don&apos;t fit your diet, spend time
           reading confusing labels, and end up wasting money on foods that
@@ -126,82 +127,31 @@ export default function Home() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Feature 1 */}
-          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
-            <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
-              <CheckIcon />
+          {features.map((feature, index) => (
+            <div 
+              key={index}
+              className="bg-[var(--subsection)] rounded-[20px] p-8"
+            >
+              <div className="w-10 h-10 rounded-full bg-[var(--primary)]/20 flex items-center justify-center mb-6">
+                {feature.icon}
+              </div>
+              <h3 className="text-2xl font-normal mb-4">{feature.title}</h3>
+              <p>
+                {feature.description}
+              </p>
             </div>
-            <h3 className="text-2xl font-normal mb-4">Community</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              We are only as strong as those around us. We&apos;re creating a
-              place for you, our users, to follow and share your friends&apos;
-              interests and preferences.
-            </p>
-          </div>
-
-          {/* Feature 2 */}
-          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
-            <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
-              <CheckIcon />
-            </div>
-            <h3 className="text-2xl font-normal mb-4">Personalized Diets</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              We enable you to set up your personalized account ready for you to
-              shop and swipe away using only your pantry items and our brief
-              questionnaire.
-            </p>
-          </div>
-
-          {/* Feature 3 */}
-          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
-            <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
-              <CheckIcon />
-            </div>
-            <h3 className="text-2xl font-normal mb-4">
-              Artificial Intelligence
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              We are harnessing the power of AI to create personalized product
-              and recipe recommendations specifically for you and your
-              household.
-            </p>
-          </div>
-
-          {/* Feature 4 */}
-          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
-            <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
-              <CheckIcon />
-            </div>
-            <h3 className="text-2xl font-normal mb-4">Transparency</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              We enable you to make your own informed consumer decisions based
-              on credible, unbiased information.
-            </p>
-          </div>
-
-          {/* Feature 5 */}
-          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8">
-            <div className="w-10 h-10 rounded-full bg-[#00D37F]/20 flex items-center justify-center mb-6">
-              <CheckIcon />
-            </div>
-            <h3 className="text-2xl font-normal mb-4">Fitness & Lifestyle</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              We are partnering with curated organizations including clubs,
-              wellness centers, and gyms to help navigate you on your health
-              journey.
-            </p>
-          </div>
+          ))}
 
           {/* CTA Card */}
-          <div className="bg-[#F7F7F7] dark:bg-[#4C4C4C] rounded-[20px] p-8 flex flex-col justify-between">
+          <div className="bg-[var(--subsection)] rounded-[20px] p-8 flex flex-col justify-between text-center">
             <div>
-              <h3 className="text-2xl font-normal mb-4">
+              <h3 className="text-2xl md:text-3xl font-normal mb-8">
                 Let&apos;s Simplify Your Shopping Experience
               </h3>
             </div>
             <div className="mt-8">
               <Link href="https://utrition.notion.site/12fbcc38ac63802ea0b0c49950dc2512?pvs=105">
-                <button className="px-6 py-2 bg-[#00D37F] text-white rounded-[50px] hover:bg-[#00B26C] transition duration-300 inline-block">
+                <button className="px-6 py-2 bg-[var(--primary)] text-white rounded-[50px] hover:opacity-90 transition duration-300 inline-block">
                   Sign Up
                 </button>
               </Link>
@@ -214,14 +164,14 @@ export default function Home() {
       <section className="container mx-auto px-6 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 ">
           <div className="md:w-1/2 ">
-            <h2 className="text-3xl md:text-4xl lg:text-7xl font-normal mb-6 leading-tight text-[#00D37F]">
+            <h2 className="text-3xl md:text-4xl lg:text-7xl font-normal mb-6 leading-tight text-[var(--primary)]">
               Set. Scan. Swipe.
             </h2>
-            <p className="text-lg text-[#0F2830] md:text-4xl text-gray-600 dark:text-white">
+            <p className="text-lg text-[var(--text)] md:text-4xl">
               Smarter eating in three simple steps: set your dietary
               preferences, scan any food item with your phone, and choose the
               best options that fit your lifestyle. With{" "}
-              <span className="text-[#00D37F] font-normal">UTRITION</span>,
+              <span className="text-[var(--primary)] font-normal">UTRITION</span>,
               making informed food choices has never been easier.
             </p>
           </div>
@@ -233,7 +183,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-6 py-16 md:py-24">
-        <div className="bg-[#1E1E1E] dark:bg-[#4C4C4C] rounded-[38px] p-8 md:p-16 text-center text-white max-w-[1359px] mx-auto shadow-lg">
+        <div className="bg-[var(--cta-bg)] rounded-[38px] p-8 md:p-16 text-center text-white max-w-[1359px] mx-auto shadow-lg">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal mb-6 leading-tight text-white">
             We Make it Easy for You
           </h2>
@@ -256,7 +206,7 @@ export default function Home() {
           <p className="text-15 mb-4 md:mb-0 text-gray-500 dark:text-gray-400">
             Copyright © 2025 UTRITION, Inc. All Rights Reserved.
           </p>
-          <div className="text-15 text-gray-500 dark:text-gray-400">
+          <div className="text-15">
             <Link href="#" className="hover:text-[#00D37F] mr-4">
               Contact Us
             </Link>

@@ -1,38 +1,35 @@
-"use client";
+'use client'
 
-import { Moon, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
-import { useTheme } from "./theme-provider";
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
+import Image from 'next/image'
+import { Sun, Moon } from 'lucide-react'
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false)
+  const { setTheme, resolvedTheme } = useTheme()
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  useEffect(() =>  setMounted(true), [])
 
-  if (!mounted) return <div className="w-10 h-10" />;
+  if (!mounted) return (
+    <Image
+      src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9IiNGRkZGRkYiIGZpbGw9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBoZWlnaHQ9IjIwMHB4IiB3aWR0aD0iMjAwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSIyIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiIHJ4PSIyIj48L3JlY3Q+PC9zdmc+Cg=="
+      width={36}
+      height={36}
+      sizes="36x36"
+      alt="Loading Light/Dark Toggle"
+      priority={false}
+      title="Loading Light/Dark Toggle"
+    />
+  )
 
-  const isDark = theme === "dark";
+  if (resolvedTheme === 'dark') {
+    <Moon/>
+    return <Sun onClick={() => setTheme('light')} />
+  }
 
-  const toggleTheme = () => {
-    const nextTheme = isDark ? "light" : "dark";
-    console.log("Toggling theme to:", nextTheme); // Add this line
-    setTheme(nextTheme);
-  };
+  if (resolvedTheme === 'light') {
+    return <Moon onClick={() => setTheme('dark')} />
+  }
 
-  return (
-    <button
-      onClick={toggleTheme}
-      className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition duration-300"
-      aria-label="Toggle theme"
-    >
-      {isDark ? (
-        <Sun className="w-5 h-5 text-gray-800 dark:text-gray-200" />
-      ) : (
-        <Moon className="w-5 h-5 text-gray-800 dark:text-gray-200" />
-      )}
-    </button>
-  );
 }
