@@ -24,7 +24,6 @@ export function ThemeToggle() {
   )
 
   if (resolvedTheme === 'dark') {
-    <Moon/>
     return <Sun onClick={() => setTheme('light')} />
   }
 
