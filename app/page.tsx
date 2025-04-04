@@ -75,25 +75,19 @@ export default function Home() {
               <p className="text-5xl md:text-6xl lg:text-7xl font-normal text-[var(--primary)] mb-4">
                 20%
               </p>
-              <p className="text-lg">
-                Say it&apos;s a lack of knowledge
-              </p>
+              <p className="text-lg">Say it&apos;s a lack of knowledge</p>
             </div>
             <div className="text-center">
               <p className="text-5xl md:text-6xl lg:text-7xl font-normal text-[var(--primary)] mb-4">
                 23%
               </p>
-              <p className="text-lg">
-                Think it takes too much time
-              </p>
+              <p className="text-lg">Think it takes too much time</p>
             </div>
             <div className="text-center">
               <p className="text-5xl md:text-6xl lg:text-7xl font-normal text-[var(--primary)] mb-4">
                 40%
               </p>
-              <p className="text-lg">
-                Believe it is too expensive
-              </p>
+              <p className="text-lg">Believe it is too expensive</p>
             </div>
           </div>
         </div>
@@ -125,7 +119,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div 
+            <div
               key={index}
               className="bg-[var(--subsection)] rounded-[20px] p-8 hover:shadow-[0_0_30px_var(--primary)] transition duration-300"
             >
@@ -133,9 +127,7 @@ export default function Home() {
                 {feature.icon}
               </div>
               <h3 className="text-2xl font-normal mb-4">{feature.title}</h3>
-              <p>
-                {feature.description}
-              </p>
+              <p>{feature.description}</p>
             </div>
           ))}
 
@@ -168,8 +160,10 @@ export default function Home() {
               Smarter eating in three simple steps: set your dietary
               preferences, scan any food item with your phone, and choose the
               best options that fit your lifestyle. With{" "}
-              <span className="text-[var(--primary)] font-normal">UTRITION</span>,
-              making informed food choices has never been easier.
+              <span className="text-[var(--primary)] font-normal">
+                UTRITION
+              </span>
+              , making informed food choices has never been easier.
             </p>
           </div>
           <div className="md:w-1/2">
