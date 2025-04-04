@@ -52,7 +52,7 @@ export default function Home() {
 
       {/* Problem Section */}
       <section className="container mx-auto px-6 py-16 md:py-24">
-        <div className="bg-[var(--subsection)] rounded-4xl p-8 md:p-12">
+        <div className="bg-[var(--subsection)] rounded-4xl p-8 md:p-12 shadow-lg">
           <div className="flex flex-col md:flex-row gap-8 md:gap-16">
             <div className="md:w-1/2">
               <h2 className="text-[var(--text)] text-3xl md:text-4xl lg:text-5xl font-normal mb-4 leading-tight">
@@ -104,7 +104,7 @@ export default function Home() {
         id="stress"
         className="container mx-auto px-6 py-16 md:py-24 text-center max-w-4xl"
       >
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal mb-6 leading-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-4xl font-normal mb-6 leading-tight">
           The Stress of Navigating on Your Own.
         </h2>
         <p className="text-lg md:text-xl">
@@ -127,7 +127,7 @@ export default function Home() {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="bg-[var(--subsection)] rounded-[20px] p-8"
+              className="bg-[var(--subsection)] rounded-[20px] p-8 hover:shadow-[0_0_30px_var(--primary)] transition duration-300"
             >
               <div className="w-10 h-10 rounded-full bg-[var(--primary)]/20 flex items-center justify-center mb-6">
                 {feature.icon}
