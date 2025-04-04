@@ -10,31 +10,26 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://utrition.ai'), // ✅ Your deployed domain
   title: 'UTRITION - Catalyze Health with AI',
-  description: 'UTRITION helps you make informed food choices by utilizing AI to simplify food information and access for everyone.',
+  description: 'UTRITION helps you make informed food choices...',
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://utrition.ai',
-    siteName: 'UTRITION',
-    title: 'UTRITION - Catalyze Health with AI',
-    description: 'UTRITION helps you make informed food choices by utilizing AI to simplify food information and access for everyone.',
     images: [
       {
-        url: '/utrition-banner.png',
-        width: 150,
-        height: 40,
-        alt: 'UTRITION Logo',
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'UTRITION Preview Image',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UTRITION - Catalyze Health with AI',
-    description: 'UTRITION helps you make informed food choices by utilizing AI to simplify food information and access for everyone.',
-    images: ['/utrition-banner.png'],
+    images: ['/opengraph-image'],
   },
 }
+
+
 
 export default function RootLayout({
   children,
