@@ -19,7 +19,7 @@ const beVietnamProRegular = await fetch(
 
 export default async function Image() {
   const logoData = await fetch(
-    new URL("./opengraph-image.png", import.meta.url)
+    new URL("./_assets/opengraph-image.png", import.meta.url)
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
