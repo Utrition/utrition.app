@@ -32,11 +32,11 @@ export default function Home() {
         </header>
 
         {/* Hero Section */}
-        <section className="container mx-auto px-4 sm:px-6 py-8 sm:py-16 md:py-24 text-center max-w-7xl flex-grow flex flex-col justify-center">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-normal mb-4 sm:mb-6 leading-tight">
+        <section className="container mx-auto px-4 sm:px-6 py-8 sm:py-16 md:py-24 text-center max-w-8xl flex-grow flex flex-col justify-center">
+          <h1 className="text-2xl sm:text-3xl md:text-6xl lg:text-7xl font-normal mb-4 sm:mb-6 leading-tight">
             Catalyzing Health with AI.
           </h1>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-[var(--text)] max-w-3xl mx-auto">
+          <p className="text-base md:text-xl lg:text-2xl mb-6 sm:mb-8 text-[var(--text-color)] max-w-3xl mx-auto">
             We&apos;re improving global well-being by utilizing AI to simplify
             food information and access for everyone.
           </p>
@@ -55,12 +55,12 @@ export default function Home() {
         <div className="bg-[var(--subsection)] rounded-4xl p-8 md:p-12 shadow-lg">
           <div className="flex flex-col md:flex-row gap-8 md:gap-16">
             <div className="md:w-1/2">
-              <h2 className="text-[var(--text)] text-3xl md:text-4xl lg:text-5xl font-normal mb-4 leading-tight">
+              <h2 className="text-[var(--text-color)] text-3xl md:text-4xl lg:text-5xl font-normal mb-4 leading-tight">
                 It&apos;s Hard to Find What&apos;s Right for You.
               </h2>
             </div>
             <div className="md:w-1/2">
-              <p className="text-lg md:text-xl text-[var(--text)] ">
+              <p className="text-lg md:text-xl text-[var(--text-color)] ">
                 With endless options and confusing labels, healthy eating can
                 feel overwhelming. Whether you&apos;re short on time or unsure
                 where to start, finding the right foods shouldn&apos;t be this
@@ -153,10 +153,10 @@ export default function Home() {
       <section className="container mx-auto px-6 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 ">
           <div className="md:w-1/2 ">
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-normal mb-6 leading-tight text-[var(--primary)]">
+            <h2 className="text-4xl md:text-4xl lg:text-6xl font-normal mb-6 leading-tight text-[var(--primary)]">
               Set. Scan. Swipe.
             </h2>
-            <p className="text-lg text-[var(--text)] md:text-4xl">
+            <p className="text-lg text-[var(--text-color)] md:text-4xl">
               Smarter eating in three simple steps: set your dietary
               preferences, scan any food item with your phone, and choose the
               best options that fit your lifestyle. With{" "}

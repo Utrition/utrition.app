@@ -13,7 +13,7 @@ const beVietnamPro = Be_Vietnam_Pro({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://utrition.ai'),
-  title: 'UTRITION - Catalyze Health',
+  title: 'UTRITION | Catalyze Health',
   description: 'Simplify food choices with AI-powered food product recommendations tailored to your lifestyle. UTRITION helps you find the right foods faster—based on your diet, allergies, and preferences.',
   openGraph: {
     title: 'UTRITION - Catalyze Health',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UTRITION - Catalyze Health',
+    title: 'UTRITION | Catalyze Health',
     description: 'Simplify food choices with AI-powered food product recommendations tailored to your lifestyle. UTRITION helps you find the right foods faster—based on your diet, allergies, and preferences.',
     images: ['https://utrition.ai/opengraph-image'],
   },
