@@ -1,3 +1,7 @@
-# UTrition Website v2.0
+<a href="https://utrition.ai">
+   <img src="http://utrition.ai/opengraph-image" alt="OG Image">
+</a>
 
-Fully redesigned UTrition website with modern UI and user engagement capture.
+# UTRITION Website
+* NextJS
+* TailwindCSS v4.0
