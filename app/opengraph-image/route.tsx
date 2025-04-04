@@ -2,13 +2,6 @@ import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
 
-export const alt = 'UTRITION - Catalyze Health with AI'
-export const size = {
-  width: 1200,
-  height: 630,
-}
-export const contentType = 'image/png'
-
 function toBase64(buffer: ArrayBuffer): string {
   return btoa(String.fromCharCode(...new Uint8Array(buffer)))
 }
@@ -60,7 +53,6 @@ export async function GET() {
         </div>
       ),
       {
-        ...size,
         fonts: [
           {
             name: 'Be Vietnam Pro',
@@ -96,9 +88,6 @@ export async function GET() {
           UTRITION
         </div>
       ),
-      {
-        ...size,
-      }
     )
   }
 }
