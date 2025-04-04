@@ -2,6 +2,8 @@ import { Providers } from './components/theme-provider'
 import { Metadata } from 'next'
 import { Be_Vietnam_Pro } from 'next/font/google'
 import './globals.css'
+import './opengraph-image/register'
+
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ['latin'],
