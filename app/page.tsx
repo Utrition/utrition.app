@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CheckIcon } from "./components/check-icon";
 import { ThemeToggle } from "./components/theme-toggle";
 import { ThemeAwareScreenshotCSS } from "./components/theme-aware-screenshot-css";
 import { features } from "./data/features";
@@ -11,8 +10,8 @@ export default function Home() {
       {/* Header and Hero Wrapper */}
       <div className="min-h-screen flex flex-col">
         {/* Header */}
-        <header className="container mx-auto px-6 py-8 flex justify-between items-center">
-          <div className="h-10">
+        <header className="container mx-auto px-4 sm:px-6 py-4 sm:py-8 flex justify-between items-center">
+          <div className="h-8 sm:h-10">
             <Image
               src="/utrition-logo.png?height=40&width=150"
               alt="UTRITION Logo"
@@ -22,10 +21,10 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <ThemeToggle />
             <Link href="https://utrition.notion.site/12fbcc38ac63802ea0b0c49950dc2512?pvs=105">
-              <button className="px-6 py-2 border-color-primary bg-[var(--primary)] text-white font-semibold rounded-[50px] hover:opacity-90 transition duration-300 inline-block">
+              <button className="px-3 py-1.5 sm:px-6 sm:py-2 text-sm sm:text-base bg-[var(--primary)] text-white font-semibold rounded-[50px] hover:opacity-90 transition duration-300 inline-block">
                 Sign Up
               </button>
             </Link>
@@ -33,22 +32,20 @@ export default function Home() {
         </header>
 
         {/* Hero Section */}
-        <section className="container mx-auto px-6 py-16 md:py-24 text-center max-w-7xl flex-grow flex flex-col justify-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal mb-6 leading-tight whitespace-nowrap">
+        <section className="container mx-auto px-4 sm:px-6 py-8 sm:py-16 md:py-24 text-center max-w-7xl flex-grow flex flex-col justify-center">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-normal mb-4 sm:mb-6 leading-tight">
             Catalyzing Health with AI.
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 text-[var(--text)]">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-[var(--text)] max-w-3xl mx-auto">
             We&apos;re improving global well-being by utilizing AI to simplify
             food information and access for everyone.
           </p>
           <div className="inline-block">
-            <div className="inline-block">
-              <Link href="#stress">
-                <button className="px-8 py-3 border border-[var(--primary)] text-text font-semibold rounded-[50px] hover:bg-[#00D37F] hover:text-white transition duration-300">
-                  Learn More
-                </button>
-              </Link>
-            </div>
+            <Link href="#stress">
+              <button className="px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base border border-[var(--primary)] text-text font-semibold rounded-[50px] hover:bg-[var(--primary)] hover:text-white transition duration-300">
+                Learn More
+              </button>
+            </Link>
           </div>
         </section>
       </div>
@@ -164,7 +161,7 @@ export default function Home() {
       <section className="container mx-auto px-6 py-16 md:py-24">
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16 ">
           <div className="md:w-1/2 ">
-            <h2 className="text-3xl md:text-4xl lg:text-7xl font-normal mb-6 leading-tight text-[var(--primary)]">
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-normal mb-6 leading-tight text-[var(--primary)]">
               Set. Scan. Swipe.
             </h2>
             <p className="text-lg text-[var(--text)] md:text-4xl">
@@ -201,19 +198,19 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="container mx-auto px-6 py-8 border-t dark:border-gray-800">
+      <footer className="container mx-auto px-6 py-8 border-t ">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-15 mb-4 md:mb-0 text-gray-500 dark:text-gray-400">
+          <p className="text-15 mb-4 md:mb-0">
             Copyright © 2025 UTRITION, Inc. All Rights Reserved.
           </p>
           <div className="text-15">
-            <Link href="#" className="hover:text-[#00D37F] mr-4">
+            <Link href="#" className="hover:text-[var(--primary)] mr-4">
               Contact Us
             </Link>
-            <Link href="#" className="hover:text-[#00D37F] mr-4">
+            <Link href="#" className="hover:text-[var(--primary)] mr-4">
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-[#00D37F]">
+            <Link href="#" className="hover:text-[var(--primary)]">
               Terms of Service
             </Link>
           </div>

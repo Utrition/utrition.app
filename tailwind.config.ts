@@ -17,6 +17,9 @@ const config: Config = {
         subsection: "hsl(var(--subsection))",
         ctaBg: "hsl(var(--cta-bg))",
       },
+      fontFamily: {
+        sans: ['var(--font-be-vietnam-pro)', 'sans-serif'],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
