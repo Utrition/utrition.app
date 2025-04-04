@@ -48,7 +48,7 @@ export async function GET() {
               letterSpacing: '-0.025em',
             }}
           >
-            Catalyze Health with AI
+            Catalyze Health
           </div>
         </div>
       ),

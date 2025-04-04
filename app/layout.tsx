@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://utrition.ai'),
   title: 'UTRITION - Catalyze Health with AI',
   openGraph: {
-    title: 'UTRITION - Catalyze Health with AI',
-    description: 'UTRITION helps you make informed food choices by utilizing AI.',
+    title: 'UTRITION - Catalyze Health',
+    description: 'UTRITION helps you make informed food choices by leveraging AI.',
     url: 'https://utrition.ai',
     siteName: 'UTRITION',
     images: [
