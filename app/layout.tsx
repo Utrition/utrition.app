@@ -10,13 +10,16 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://utrition.ai'), // ✅ Your deployed domain
+  metadataBase: new URL('https://utrition.ai'),
   title: 'UTRITION - Catalyze Health with AI',
-  description: 'UTRITION helps you make informed food choices...',
   openGraph: {
+    title: 'UTRITION - Catalyze Health with AI',
+    description: 'UTRITION helps you make informed food choices by utilizing AI.',
+    url: 'https://utrition.ai',
+    siteName: 'UTRITION',
     images: [
       {
-        url: '/opengraph-image',
+        url: 'https://utrition.ai/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'UTRITION Preview Image',
@@ -25,9 +28,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/opengraph-image'],
+    title: 'UTRITION - Catalyze Health with AI',
+    images: ['https://utrition.ai/opengraph-image'],
   },
 }
+
 
 
 
