@@ -198,13 +198,13 @@ export default function Home() {
             Copyright © 2025 UTRITION, Inc. All Rights Reserved.
           </p>
           <div className="text-15">
-            <Link href="#" className="hover:text-[var(--primary)] mr-4">
+            <Link href="mailto:info@utrition.ai" className="hover:text-[var(--primary)] transition duration-300 mr-4">
               Contact Us
             </Link>
-            <Link href="#" className="hover:text-[var(--primary)] mr-4">
+            <Link href="#" className="hover:text-[var(--primary)] transition duration-300 mr-4">
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-[var(--primary)]">
+            <Link href="#" className="hover:text-[var(--primary)] transition duration-300">
               Terms of Service
             </Link>
           </div>
