@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: 'UTRITION',
     images: [
       {
-        url: 'https://utrition.ai/opengraph-image',
+        url: 'https://utrition.ai/opengraph-image/route',
         width: 1200,
         height: 630,
         alt: 'UTRITION Preview Image',
@@ -32,9 +32,6 @@ export const metadata: Metadata = {
     images: ['https://utrition.ai/opengraph-image'],
   },
 }
-
-
-
 
 export default function RootLayout({
   children,

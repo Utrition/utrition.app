@@ -3,6 +3,27 @@ import Link from "next/link";
 import { ThemeToggle } from "./components/theme-toggle";
 import { ThemeAwareScreenshotCSS } from "./components/theme-aware-screenshot-css";
 import { features } from "./data/features";
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    metadataBase: new URL('https://utrition.ai'),
+    openGraph: {
+      images: [
+        {
+          url: 'https://utrition.ai/opengraph-image',
+          width: 1200,
+          height: 630,
+          alt: 'UTRITION OG Image',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: ['https://utrition.ai/opengraph-image'],
+    },
+  }
+}
 
 export default function Home() {
   return (
