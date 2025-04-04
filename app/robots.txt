@@ -1,22 +1,3 @@
 # Allow all crawlers full access
 User-agent: *
 Allow: /
-
-# Prevent indexing of API and edge function routes
-Disallow: /opengraph-image
-
-# Sitemap location
-Sitemap: https://utrition.ai/sitemap.xml
-
-# Extra crawl delay for aggressive bots (optional, Google ignores this)
-# Crawl-delay: 10
-
-# Specific rules for social preview bots (let them see OG routes if needed)
-User-agent: FacebookExternalHit
-Allow: /opengraph-image
-
-User-agent: Twitterbot
-Allow: /opengraph-image
-
-User-agent: LinkedInBot
-Allow: /opengraph-image
