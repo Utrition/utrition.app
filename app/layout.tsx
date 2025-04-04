@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: 'UTRITION',
     images: [
       {
-        url: 'https://utrition.ai/opengraph-image/route',
+        url: 'https://utrition.ai/opengraph-image/',
         width: 1200,
         height: 630,
         alt: 'UTRITION Preview Image',
