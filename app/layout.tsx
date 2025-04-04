@@ -1,6 +1,7 @@
 import { Providers } from './components/theme-provider'
 import { Metadata } from 'next'
 import { Be_Vietnam_Pro } from 'next/font/google'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css'
 import './opengraph-image/register'
 
@@ -48,6 +49,7 @@ export default function RootLayout({
       <body className={`${beVietnamPro.className} bg-background text-primary-foreground`}>
         <Providers>
             {children}
+            <SpeedInsights />
         </Providers>
       </body>
     </html>
